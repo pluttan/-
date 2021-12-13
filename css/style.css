@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Disney";
+  src: url("../fonts/DisneyPark.woff2") format("woff2"),
+    url("../fonts/DisneyPark.ttf") format("truetype"),
+    url("../fonts/DisneyPark.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cocotte";
+  src: url("../fonts/Cocotte.woff2") format("woff2"),
+    url("../fonts/Cocotte.ttf") format("truetype"),
+    url("../fonts/Cocotte.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inform";
+  src: url("../fonts/Inform.woff2") format("woff2"),
+    url("../fonts/Inform.ttf") format("truetype"),
+    url("../fonts/Inform.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#pp-nav {
+  display: none;
+}
+
+.section {
+  text-align: center;
+  background-size: cover;
+  display: none;
+}
+s

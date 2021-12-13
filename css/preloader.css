@@ -1,0 +1,31 @@
+.preloader {
+}
+
+.preloader-remove {
+  opacity: 0;
+  z-index: -10;
+}
+
+.preloader svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 25em;
+  border-radius: 3px;
+  background: #242424;
+  fill: none;
+  stroke: #353535;
+  stroke-linecap: round;
+  stroke-width: 12%;
+}
+
+.preloader use {
+  stroke: #696969;
+  animation: preloader 2s linear infinite;
+}
+
+@keyframes preloader {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
