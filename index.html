@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html>        
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Сайт извесного фотографа. Есть 
+    <meta name="description" content="Сайт неизвесного фотографа. Есть 
                                       возможность связаться и/или заказать 
                                       фотосет. Портфолио прилагается на сайте"
-                                      /> 
+                                      />
     <meta name="author" content="pluttan"/>
     <meta name="robots" content="index, follow" />
     <meta name="yandex" content="noyaca" />
@@ -31,7 +31,7 @@
     <script type="text/javascript" src="js/preloader.js"></script>
     <script type="text/javascript" src="js/hat.js"></script>
     <script type="text/javascript" src="js/document_ready.js"></script>
-    <script>$("#mainbg").css({ "background-image":"url(img/imgsformainbg/" + String(getRandomInt(18)) + ".webp)",});</script>
+    <script>$("#mainbg").css({ "background-image":"url(img/imgsformainbg/" + String(getRandomInt(31)) + ".webp)",});</script>
 
     
 <!-- -->
@@ -40,17 +40,7 @@
   <body>
     <!--preloader-->
 
-    <div
-      class="preloader"
-      style="
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        z-index: 100000000;
-        justify-content: center;
-        background-color: #242424;
-      "
-    >
+    <div class="preloader">
       <svg viewBox="-2000 -1000 4000 2000">
         <path
           id="inf"
@@ -70,7 +60,7 @@
           <a class="hat_a" id="hat_main" href="#main">Главная</a><br /><br />
           <a class="hat_a" id="hat_portfolio" href="#portfolio">Портфолио</a
           ><br /><br />
-          <a class="hat_a" id="hat_aboutme" href="что-то">Обо мне</a
+          <a class="hat_a" id="hat_about" href="что-то">Обо мне</a
           ><br /><br />
           <a class="hat_a" id="hat_order" href="что-то">Заказ работ</a
           ><br /><br />
@@ -88,19 +78,18 @@
     <div id="pagepiling">
       <div class="section" id="main">
         <div id="mainbg"></div>
-        <div>
-          
-          <h1 id="mainh1" data-in-effect="rollIn">Руфус Марк</h1>
-          <h2 id="mainh2">
-            Если быть — так быть лучшим! 
-          </h2>
-          <div id="imgM">
-            <img  id="img1" src="img/sqr.jpg" height="150px" weght="150px">
-            <img  id="img1" src="img/sqr.jpg" height="150px" weght="150px">
-            <img  id="img1" src="img/sqr.jpg" height="150px" weght="150px">
-          </div>
+        <div id="vinet_top"></div>
 
+        <h1 id="mainh1">Студия фотографии "NafanyNY"</h1>
+        <h2 id="mainh2">Фотографы-портретисты создадут идеальные условия для ваших красочных, уникальных воспоминаний.</h2>
+
+        <div id="icons">
+          <div class="icon" id="icon_portfolio"></div>
+          <div class="icon" id="icon_about"></div>
+          <div class="icon" id="icon_order"></div>
         </div>
+          
+        <div id="vinet_bottom"></div>
       </div>
       <div class="section" id="portfolio">
         <div class="intro">
