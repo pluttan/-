@@ -6,6 +6,8 @@ function getRandomInt(max) {
 
 $(window).on("load", function () {
   $("#main").css({ "z-index": "-1" });
+  $("#mainbg").css({ "background-image":"url(img/imgsformainbg/" + String(getRandomInt(18)) + ".webp)",});
+
   $("#hat").show(200);
   $("#hat").hide(200);
   $(".twobar").removeClass("hamburger").addClass("cross");
