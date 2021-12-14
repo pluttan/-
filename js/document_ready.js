@@ -4,7 +4,7 @@ var verticalCentered = false;
 $(document).ready(function () {
     let i = 0;
     function blurmain() {
-        $("#mainbg").css({ filter: "blur(" + String(i / 10) + "px)" });
+        $("#mainbg").css({ filter:"grayscale("+String(i / 200)+") blur(" + String(i / 10) + "px)"});
         i++;
     }
     function interval_of_blur() {
@@ -14,15 +14,16 @@ $(document).ready(function () {
     setTimeout(() => clearInterval(mainbginterval), 4000);
 
     function mainh1_animation() {
-        $("#mainh1").css({ display: "flex" });
-        $("#mainh1").textillate({ in: { effect: "flipInY" } });
+        $("#mainh1").css({ display: "block" });
+        $("#mainh1").textillate({loop: false, in: { effect: "flipInY" } });
     }
     function mainh2_animation() {
-        $("#mainh2").css({ display: "flex" });
-        $("#mainh2").textillate({ in: { effect: "flipInY" } });
+        $("#mainh2").css({ display: "block" });
+        $("#mainh2").textillate({loop: false, in: { effect: "flipInY",delayScale: 10000, sync: true} });
+        $("#imgM").show(600);
     }
     setTimeout(() => mainh1_animation(), 4000);
-    setTimeout(() => mainh2_animation(), 5000);
+    setTimeout(() => mainh2_animation(), 6000);
 
     $("#pagepiling").pagepiling({
         menu: "#menu",
