@@ -4,7 +4,7 @@ var verticalCentered = false;
 $(document).ready(function () {
     let i = 0;
     function blurmain() {
-        $("#mainbg").css({ filter: "blur(" + String(i / 10) + "px)" });
+        $("#mainbg").css({ filter:"grayscale("+String(i / 100)+") blur(" + String(i / 10) + "px)"});
         i++;
     }
     function interval_of_blur() {
