@@ -1,0 +1,49 @@
+body{background-color: tomato;}
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0px solid silver;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .wrap    { 
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }  
+  .flex-item {
+    background: rgb(250, 232, 67);
+    width: 350px;
+    height: 400px;
+    margin: 0px;
+    
+    line-height: 175px;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+  .flex-item2 {
+    background: white;
+    width: 350px;
+    height: 400px;
+    margin: 0px;
+    
+    line-height: 70px;
+    color: black;
+    font-weight: bold;
+    font-size:1.3em;
+    text-align: justify;
+  }
+#strelochka{
+  background-image: url('strelka.jpg');
+  width:50px;
+  height:50px ;
+  align-self:right ;
+  z-index:10000 ;
+}
