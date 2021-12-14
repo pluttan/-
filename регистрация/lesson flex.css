@@ -11,34 +11,30 @@ body{background-color: tomato;}
     display: -moz-flex;
     display: -webkit-flex;
     display: flex;
-  }
-  .wrap    { 
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }  
-  .flex-item {
-    background: rgb(250, 232, 67);
-    padding: 5px;
-    width: 350px;
-    height: 400px;
-    margin: 0px;
-    
-    line-height: 100px;
-    color: black;
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;
-  }
-  .flex-item2 {
-    background: white;
-    padding: 5px;
-    width: 350px;
-    height: 400px;
-    margin: 0px;
-    
-    line-height: 40px;
-    color: black;
-    font-weight: bold;
-    font-size:1.3em;
-    text-align: justify;
-  }
+}
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}  
+.flex-item {
+  background: rgb(250, 232, 67);
+  width: 20%;
+  height: 50vh;  
+
+  line-height: 17vh;
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+.flex-item2 {
+  background: white;
+  width: 20%;
+  height: 50vh;  
+
+  line-height: 5vh;
+  color: black;
+  font-weight: bold;
+  font-size:1.3em;
+  text-align: justify;
+}

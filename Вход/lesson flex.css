@@ -16,7 +16,7 @@ body{background-color: tomato;}
   }  
   .flex-item {
     background: rgb(250, 232, 67);
-    width: 35%;
+    width: 20%;
     height: 40vh;
     
     line-height: 17vh;
@@ -27,7 +27,7 @@ body{background-color: tomato;}
   }
   .flex-item2 {
     background: white;
-    width: 35%;
+    width: 20%;
     height: 40vh;
     
     line-height: 8vh;
