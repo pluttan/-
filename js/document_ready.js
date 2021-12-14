@@ -21,8 +21,14 @@ $(document).ready(function () {
         $("#mainh2").css({ display: "flex" });
         $("#mainh2").textillate({ in: { effect: "flipInY" } });
     }
+
     setTimeout(() => mainh1_animation(), 4000);
     setTimeout(() => mainh2_animation(), 5000);
+
+    function imgOnMain(){
+        $("#imgM").show(1000)
+    }
+    setTimeout(() => imgOnMain(), 4000);
 
     $("#pagepiling").pagepiling({
         menu: "#menu",
