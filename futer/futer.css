@@ -1,0 +1,59 @@
+body{background-color:white;}
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0px solid silver;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}  
+.flex-item {
+    margin:auto;
+  background: black;
+  width: 200vh;
+  height: 50vh;  
+}
+#instagram{
+    margin:auto;
+    background-image: url('instagram1.png');
+    width:4%;
+    height:19% ;
+    z-index:10000 ;
+  }
+  #facebook{
+    margin:auto;
+    background-image: url('facebook1.png');
+    width:4%;
+    height:19% ;
+    z-index:10000 ;
+  }
+  #vk{
+    margin:auto;
+    background-image: url('vk1.png');
+    width:4%;
+    height:19% ;
+    z-index:10000 ;
+  }
+  #twitch{
+    margin:auto;
+    background-image: url('twitch1.png');
+    width:4%;
+    height:19% ;
+    z-index:10000 ;
+  }  
+  #whatsapp{
+    margin:auto;
+    background-image: url('whatsapp1.png');
+    width:4%;
+    height:19% ;
+    z-index:10000 ;
+  }    
