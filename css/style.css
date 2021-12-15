@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  user-select:none;
 }
 
 body {
@@ -8,27 +9,45 @@ body {
 
 @font-face {
   font-family: "Disney";
-  src: url("../fonts/DisneyPark.woff2") format("woff2"),
-    url("../fonts/DisneyPark.ttf") format("truetype"),
-    url("../fonts/DisneyPark.woff") format("woff");
+  src: url("../fonts/Disney/DisneyPark.woff2") format("woff2"),
+    url("../fonts/Disney/DisneyPark.ttf") format("truetype"),
+    url("../fonts/Disney/DisneyPark.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cocotte";
-  src: url("../fonts/Cocotte.woff2") format("woff2"),
-    url("../fonts/Cocotte.ttf") format("truetype"),
-    url("../fonts/Cocotte.woff") format("woff");
+  src: url("../fonts/Cocotte/Cocotte.woff2") format("woff2"),
+    url("../fonts/Cocotte/Cocotte.ttf") format("truetype"),
+    url("../fonts/Cocotte/Cocotte.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Inform";
-  src: url("../fonts/Inform.woff2") format("woff2"),
-    url("../fonts/Inform.ttf") format("truetype"),
-    url("../fonts/Inform.woff") format("woff");
+  src: url("../fonts/Inform/Inform.woff2") format("woff2"),
+    url("../fonts/Inform/Inform.ttf") format("truetype"),
+    url("../fonts/Inform/Inform.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa/Comfortaa-Regular.woff2") format("woff2"),
+    url("../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype"),
+    url("../fonts/Comfortaa/Comfortaa-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url("../fonts/Baloo/BalooBhaijaan2-Regular.woff2") format("woff2"),
+    url("../fonts/Baloo/BalooBhaijaan2-VariableFont_wght.ttf") format("truetype"),
+    url("../fonts/Baloo/BalooBhaijaan2-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

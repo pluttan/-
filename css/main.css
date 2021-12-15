@@ -1,7 +1,7 @@
 #main {
-  font-family: ;
-  text-shadow: 1px 1px 2px black, 0 0 1em rgb(167, 184, 153);
-
+  font-family: Comfortaa;
+  text-shadow: 3px 3px 6px black, 0 0 1em black;
+  user-select:none;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -42,46 +42,69 @@
   color: aliceblue;
   font-size: 70px;
   display: none;
-  margin-top: 10%;
   text-align: center;
 }
 
+#mainh1 .word3{
+  font-family: Disney;
+  font-size: 130px;
+  letter-spacing: 10px;
+
+}
+
 #mainh2 {
+  text-shadow: 3px 3px 6px black, 0 0 0em black;
   color: aliceblue;
-  font-size: 50px;
+  font-size: 40px;
   display: none;  
+  text-align: center;
 }
 
 #icons{
   position: absolute;
   top: 40vh;
-  
+  text-shadow: none;
   width:100%;
   margin: 5%;
   display: flex;
   margin-right: auto;
   margin-left: auto;
   justify-content:center;
+  filter:blur(1000000000000000000000000000px);
 }
 
 .icon{
-  background-color: #00000090;
+  cursor: pointer;
+  background-color: #FFFFFF90;
   border-radius: 10px;
   height: 35vh;
   width: 20vw;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  filter:invert(100%);
+  font-size: 40px;
+  color:0x000000;
+}
+.icon p{
+  color:#000000;
+  margin-top: 27vh;
 }
 #icon_portfolio{  
-  
+  background-image: url('../img/icons/portfolio.svg');
+
 }
 
 #icon_about{
   margin-left: 5vw;
-  
+  background-image: url('../img/icons/about.svg');
+
 }
 
 #icon_order{
   margin-left: 5vw;
-  
+  background-image: url('../img/icons/order.svg');
+  background-position: 50% 20%;
 }
 
 

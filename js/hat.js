@@ -5,6 +5,7 @@ $(document).on("click", ".hamburger", function () {
     "border-top-left-radius": "0px",
   });
   $("#hat").show(200);
+  $("#hat").css({display:"inline"});
 });
 
 $(document).on("click", ".cross", function () {

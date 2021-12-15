@@ -25,6 +25,24 @@ $(document).ready(function () {
     setTimeout(() => mainh1_animation(), 4000);
     setTimeout(() => mainh2_animation(), 6000);
 
+    function bluricon(){
+        $("#icons").css({ filter:"blur(" + String(i*i*i) + "px)"});
+        i=i-0.1;
+    }
+
+    function interval_of_icon() {
+        i=10.1;
+        iconinterval = setInterval(bluricon, 10);
+    }
+
+    function end_interval_of_icon() {
+        clearInterval(iconinterval);
+        $("#icons").css({ filter:"blur(0px)"});
+    }
+
+    setTimeout(() => interval_of_icon(), 6000);
+    setTimeout(() => end_interval_of_icon(), 7000);
+
     $("#pagepiling").pagepiling({
         menu: "#menu",
         anchors: ["main", "portfolio", "page3"],
