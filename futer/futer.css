@@ -1,61 +1,92 @@
-body{background-color:white;
-color:white;}
-.flex-container {
-    padding: 0;
+html {
     margin: 0;
-    list-style: none;
-    border: 0px solid silver;
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
+    height: 100%;
 }
-.wrap    { 
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}  
-.flex-item {
 
-  background: black;
-  width: 200vh;
-  height: 50vh;  
+body {
+    margin: 0;
+    height: 100%;
+    background-color: white;
+    color: white;
+    padding: auto;
+    Position: absolute;
 }
-#instagram{
-    margin: 1% auto;
-    background-image: url('instagram1.png');
-    width:2%;
-    height:9% ;
-    z-index:10000 ;
-  }
-  #facebook{
-    margin:1% auto;
-    background-image: url('facebook1.png');
-    width:2%;
-    height:9% ;
-    z-index:10000 ;
-  }
-  #vk{
-    margin:1% auto;
-    background-image: url('vk1.png');
-    width:2%;
-    height:9% ;
-    z-index:10000 ;
-  }
-  #twitch{
-    margin:1% auto;
-    background-image: url('twitch1.png');
-    width:2%;
-    height:9% ;
-    z-index:10000 ;
-  }  
-  #whatsapp{
-    margin:1% auto;
-    background-image: url('whatsapp1.png');
-    width:2%;
-    height:9% ;
-    z-index:10000 ;
-  } 
-  .transparent25{opacity: 0.25;}   
+
+#futer {
+    background-color: black;
+    margin: 0;
+}
+
+#futer table {
+    z-index: 1745745;
+    align-items: center;
+    Position: absolute;
+    display: flex;
+    background: black;
+    margin-left: 45vw;
+}
+
+.flex-item {
+    align-items: center;
+    Position: absolute;
+    display: flex;
+    background: black;
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#instagram {
+    background-image: url('instagram2.png');
+    margin: 10px;
+    margin-left: 40%;
+    width: 2.5%;
+    height: 10%;
+    z-index: 10000;
+}
+
+#facebook {
+    background-image: url('facebook2.png');
+}
+
+#vk {
+    background-image: url('vk2.png');
+}
+
+#twitch {
+    background-image: url('twitch2.png')
+}
+
+#youtube {
+    background-image: url('youtube2.png');
+}
+
+.transparent {
+    opacity: 0.3;
+}
+
+.socnet {
+    top: 10vh;
+    width: 2.5%;
+    height: 10%;
+    z-index: 10000;
+    margin: 10px;
+}
+
+#sk {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    font-weight: 70;
+    margin-top: 100%;
+    margin-left: -145%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white
+}
