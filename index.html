@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <!-- META_TEGS -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
       name="description"
@@ -14,7 +15,7 @@
 
     <title>Nafany - cтудия фотографии в Москве</title>
 
-    <!-- libs -->
+    <!-- LIBS -->
     <link rel="stylesheet" type="text/css" href="libs/pagepiling.css" />
     <link rel="stylesheet" type="text/css" href="libs/animate.css" />
 
@@ -24,28 +25,30 @@
     <script type="text/javascript" src="libs/textillate.js"></script>
     <script type="text/javascript" src="libs/fittext.js"></script>
 
-    <!-- script&style -->
+    <!-- SCRIPT&STYLE -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/preloader.css" />
     <link rel="stylesheet" type="text/css" href="css/hat.css" />
+    <link rel="stylesheet" type="text/css" href="css/enter.css" />
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="css/order.css" />
+    <link rel="stylesheet" type="text/css" href="css/comments.css" />
 
+    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/preloader.js"></script>
     <script type="text/javascript" src="js/hat.js"></script>
+    <script type="text/javascript" src="js/enter.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
     <script type="text/javascript" src="js/document_ready.js"></script>
-    <script>
-      $("#mainbg").css({
-        "background-image":
-          "url(img/imgsformainbg/" + String(getRandomInt(31)) + ".webp)",
-      });
-    </script>
 
-    <!-- -->
   </head>
 
   <body>
-    <!--preloader-->
 
+    <!-- PRELOADER -->
     <div class="preloader">
       <svg viewBox="-2000 -1000 4000 2000">
         <path
@@ -60,14 +63,48 @@
       </svg>
     </div>
 
-    <div id="main_head">
+    <!-- HAT -->
+    <div id="hat_container">
       <div id="hat">
         <h2 id="hat_h2" align="center">
-          <div class="hat_a" id="hat_main" onClick="document.location.href = '#main'">Главная</div>
-          <div class="hat_a" id="hat_portfolio"  onClick="document.location.href = '#portfolio'">Портфолио</div>
-          <div class="hat_a" id="hat_about"  onClick="document.location.href = '#main'">Обо мне</div>
-          <div class="hat_a" id="hat_order"  onClick="document.location.href = '#main'">Заказ работ</div>
-          <div class="hat_a" id="hat_komments"  onClick="document.location.href = '#main'">Коментарии</div>
+          <div
+            class="hat_a"
+            id="hat_main"
+            onClick="document.location.href = '#main';hide_onclick()"
+          >
+            Главная
+          </div>
+          <div
+            class="hat_a"
+            id="hat_portfolio"
+            onClick="document.location.href = '#portfolio';hide_onclick()"
+          >
+            Портфолио
+          </div>
+          <div
+            class="hat_a"
+            id="hat_about"
+            onClick="document.location.href = '#about';hide_onclick()"
+          >
+            Обо мне
+          </div>
+          <div
+            class="hat_a"
+            id="hat_order"
+            onClick="document.location.href = '#order';hide_onclick()"
+          >
+            Заказ работ
+          </div>
+          <div
+            class="hat_a"
+            id="hat_komments"
+            onClick="document.location.href = '#comments';hide_onclick()">
+            Коментарии
+          </div>
+          <div style="display: flex;justify-content:space-around;">
+            <input class="button" id="hat_enter" type="button" value="Войти">
+            <input class="button" id="hat_register" type="button" value="Регистрация">
+          </div>
         </h2>
       </div>
       <div id="hat_head">
@@ -78,28 +115,87 @@
       </div>
     </div>
 
+    <!-- ENTER -->
+    <div id="black_bg"></div>
+    <ul class="enter_container">
+      <li class="enter_bg"></li>
+      <li class="enter">
+          <p>Войти</p>
+          <form id="form_enter">
+              <legend>E-mail</legend>
+              <div class="webflow-style-input" id="email_border_enter">
+                <input id="email_enter" name="email_enter" type="text" value=""/>
+              </div>
+              <legend>Пароль</legend>
+              <div class="webflow-style-input" id="password_border_enter">
+                <input id="password_enter" name="password_enter" type="password"></input>
+              </div>
+              <input class="button" id="hat_registration" type="button" value="Регистрация">
+              <input class="button" id="button_enter" type="button" value="Войти">
+          </form>
+      </li>
+    </ul>
+
+    <!-- REGISTRATION -->
+    <div id="black_bg"></div>
+    <ul class="register_container">
+      <li class="register_bg"></li>
+      <li class="register">
+          <p>Зарегстрироваться</p>
+          <form id="form_register">
+              <legend>Имя</legend>
+              <div class="webflow-style-input" id="name_border_register">
+                <input id="name_register" name="name_register" type="text" value=""/>
+              </div>
+              <legend>E-mail</legend>
+              <div class="webflow-style-input" id="email_border_register">
+                <input id="email_register" name="email_register" type="text" value=""/>
+              </div>
+              <legend>Пароль</legend>
+              <div class="webflow-style-input" id="password_border_register">
+                <input id="password_register" name="password_register" type="password"></input>
+              </div>
+              <legend>Повтор пароля</legend>
+              <div class="webflow-style-input" id="reppassword_border_register">
+                <input id="reppassword_register" name="reppassword_register" type="password"></input>
+              </div>
+              <input class="button" id="hat_enter" type="button" value="Войти">
+              <input class="button" id="button_register" type="button" value="Регистрация">
+          </form>
+      </li>
+    </ul>
+
     <div id="pagepiling">
       <div class="section" id="main">
         <div id="mainbg"></div>
         <div id="vinet_top"></div>
 
         <h1 id="mainh1">Студия фотографии <p>Nafany</p></h1>
-        <h2 id="mainh2">Фотографы-портретисты создадут идеальные условия для ваших красочных, уникальных воспоминаний.
-        </h2>
+        <h2 id="mainh2">Фотографы-портретисты создадут идеальные условия для ваших красочных,уникальных воспоминаний.</h2>
 
         <div id="icons">
-          <div class="icon" id="icon_portfolio"  onClick="document.location.href = '#portfolio'">
+          <div
+            class="icon"
+            id="icon_portfolio"
+            onClick="document.location.href = '#portfolio'"
+          >
             <p>Портфолио</p>
           </div>
-          <div class="icon" id="icon_about" onClick="document.location.href = '#about'">
+          <div
+            class="icon"
+            id="icon_about"
+            onClick="document.location.href = '#about'"
+          >
             <p>О нас</p>
           </div>
-          <div class="icon" id="icon_order" onClick="document.location.href = '#order'">
-            <p>Заказ работ</p> 
+          <div
+            class="icon"
+            id="icon_order"
+            onClick="document.location.href = '#order'"
+          >
+            <p>Заказ работ</p>
           </div>
         </div>
-        
-  
 
         <div id="vinet_bottom"></div>
       </div>
@@ -109,7 +205,19 @@
           <p>Show it in full screen!</p>
         </div>
       </div>
-      <div class="section" id="section3">
+      <div class="section" id="about">
+        <div class="intro">
+          <h1>Just terrific!</h1>
+          <p>Use the power of images</p>
+        </div>
+      </div>
+      <div class="section" id="order">
+        <div class="intro">
+          <h1>Just terrific!</h1>
+          <p>Use the power of images</p>
+        </div>
+      </div>
+      <div class="section" id="comments">
         <div class="intro">
           <h1>Just terrific!</h1>
           <p>Use the power of images</p>

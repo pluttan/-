@@ -76,3 +76,13 @@ body {
   width: 100%;
   background: linear-gradient(180deg, #000000, #00000000);
 }
+
+#black_bg{
+  width:100vw;
+  height: 100vh;
+  background-color: #000000;
+  opacity:0.8;
+  display: none;
+  position:fixed;
+  z-index:100000;
+}

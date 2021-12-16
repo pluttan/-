@@ -47,7 +47,7 @@
   transform: translateX(-25%) translateY(-175%) scaleX(0.75);
 }
 
-#main_head {
+#hat_container {
   display: flex;
   justify-content: right;
   position: relative;
@@ -103,4 +103,36 @@
   opacity: 0.7;
   right: 50px;
   top: 10px;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  width: 10vw;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 10px;
+  margin: 5px;
+  margin-top:15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #F0F0F00F;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+  
+}
+#hat_enter{
+  width: 6vw;
+}
+.button:hover {
+  cursor:pointer;
+  background: #FFFFFFA0;
+  box-shadow: 0 15px 20px #000;
+  color: #454545;
+  transform: translateY(-7px);
 }
