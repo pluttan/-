@@ -55,5 +55,5 @@ $(window).on("load", function () {
     $("#main").css({ "z-index": "10000" });
     $(".section").css({ display: "flex" });
   }
-  setTimeout(() => disp(), 1000);
+  setTimeout(() => disp(), 5000);
 });

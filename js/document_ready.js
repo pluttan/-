@@ -10,8 +10,8 @@ $(document).ready(function () {
     function interval_of_blur() {
         mainbginterval = setInterval(blurmain, 10);
     }
-    setTimeout(() => interval_of_blur(), 2000);
-    setTimeout(() => clearInterval(mainbginterval), 3000);
+    setTimeout(() => interval_of_blur(), 6000);
+    setTimeout(() => clearInterval(mainbginterval), 7000);
 
     function mainh1_animation() {
         $("#mainh1").css({ display: "block" });
@@ -22,8 +22,8 @@ $(document).ready(function () {
         $("#mainh2").textillate({ loop: false, in: { effect: "flipInY", delayScale: 10000, sync: true } });
         $("#imgM").show(600);
     }
-    setTimeout(() => mainh1_animation(), 2000);
-    setTimeout(() => mainh2_animation(), 4000);
+    setTimeout(() => mainh1_animation(), 6000);
+    setTimeout(() => mainh2_animation(), 8000);
 
     function bluricon() {
         $("#icons").css({ filter: "blur(" + String(i * i * i) + "px)" });
@@ -40,8 +40,8 @@ $(document).ready(function () {
         $("#icons").css({ filter: "blur(0px)" });
     }
 
-    setTimeout(() => interval_of_icon(), 4000);
-    setTimeout(() => end_interval_of_icon(), 5000);
+    setTimeout(() => interval_of_icon(), 8000);
+    setTimeout(() => end_interval_of_icon(), 9000);
 
     $("#pagepiling").pagepiling({
         menu: "#menu",
