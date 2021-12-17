@@ -11,9 +11,10 @@ p {
 
 #wrapper{
   display: flex;
+  position: relative;
 }
 
-#photo_of_teams{
+#photo_of_team{
   background-image: url('../img/Gp.png');
   width: 600px;
   height: 552px;
@@ -35,7 +36,7 @@ p {
   font-weight: 50;
   line-height: 1.5;
 }
-#text_about1{
+#text_about_man1{
   font-family: Comfortaa;
   font-size: 24px;
   color: #fff;
@@ -56,7 +57,7 @@ p {
   display: none;
 }
 
-#text_about2{
+#text_about_women2{
   font-family: Comfortaa;
   font-size: 24px;
   color: #fff;
@@ -77,7 +78,7 @@ p {
   display: none;
 }
 
-#text_about3{
+#text_about_man2{
   font-family: Comfortaa;
   font-size: 24px;
   color: #fff;
@@ -98,7 +99,7 @@ p {
   display: none;
 }
 
-#text_about4{
+#text_about_women2{
   font-family: Comfortaa;
   font-size: 24px;
   color: #fff;
@@ -116,6 +117,8 @@ p {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 5%;
+  opacity:0; 
+  transition: 1s;
   display: none;
 }
 
@@ -126,7 +129,6 @@ p {
   text-align: left;
   font-weight: 300;
 }
-
 
 
 
