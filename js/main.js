@@ -1,6 +1,3 @@
-var deleteLog = false;
-var verticalCentered = false;
-
 $(document).ready(function () {
     let i = 0;
     function blurmain() {
@@ -10,8 +7,8 @@ $(document).ready(function () {
     function interval_of_blur() {
         mainbginterval = setInterval(blurmain, 10);
     }
-    setTimeout(() => interval_of_blur(), 6000);
-    setTimeout(() => clearInterval(mainbginterval), 7000);
+    setTimeout(() => interval_of_blur(), timeout_of_loading+2000);
+    setTimeout(() => clearInterval(mainbginterval), timeout_of_loading+3000);
 
     function mainh1_animation() {
         $("#mainh1").css({ display: "block" });
@@ -22,8 +19,8 @@ $(document).ready(function () {
         $("#mainh2").textillate({ loop: false, in: { effect: "flipInY", delayScale: 10000, sync: true } });
         $("#imgM").show(600);
     }
-    setTimeout(() => mainh1_animation(), 6000);
-    setTimeout(() => mainh2_animation(), 8000);
+    setTimeout(() => mainh1_animation(), timeout_of_loading+3000);
+    setTimeout(() => mainh2_animation(), timeout_of_loading+5000);
 
     function bluricon() {
         $("#icons").css({ filter: "blur(" + String(i * i * i) + "px)" });
@@ -40,11 +37,5 @@ $(document).ready(function () {
         $("#icons").css({ filter: "blur(0px)" });
     }
 
-    setTimeout(() => interval_of_icon(), 8000);
-    setTimeout(() => end_interval_of_icon(), 9000);
-
-    $("#pagepiling").pagepiling({
-        menu: "#menu",
-        anchors: ["main", "portfolio", "about", "order", "comments"],
-    });
-});
+    setTimeout(() => interval_of_icon(), timeout_of_loading+5000);
+    setTimeout(() => end_interval_of_icon(), timeout_of_loading+7000);});

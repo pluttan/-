@@ -1,6 +1,7 @@
 .preloader {
   height: 100vh;
   z-index: 100000000;
+  position: absolute;
   justify-content: center;
   background-color: #242424;
 

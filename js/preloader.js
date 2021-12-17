@@ -39,7 +39,7 @@ includeHTML();
 $(window).on("load", function () {
 
   $("#main").css({ "z-index": "-1" });
-  $("#mainbg").css({ "background-image": "url(img/imgsformainbg/" + String(getRandomInt(18)) + ".webp)", });
+  $("#mainbg").css({ "background-image": "url(img/imgsformainbg/" + String(getRandomInt(31)) + ".webp)", });
   $("#imgM").hide(10);
   entreg = false;
   $("#hat").show(200);
@@ -55,5 +55,6 @@ $(window).on("load", function () {
     $("#main").css({ "z-index": "10000" });
     $(".section").css({ display: "flex" });
   }
-  setTimeout(() => disp(), 5000);
+  setTimeout(() => disp(), timeout_of_loading);
+  
 });
