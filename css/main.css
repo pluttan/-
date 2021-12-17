@@ -1,15 +1,17 @@
 #main {
-  font-family: Inform;
-  text-shadow: 1px 1px 2px black, 0 0 1em rgb(167, 184, 153);
-
+  font-family: Comfortaa;
+  text-shadow: 3px 3px 6px black, 0 0 1em black;
+  user-select:none;
   height: 100%;
   display: flex;
+  justify-content: center;
   background-color: #000;
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
   color: #fff;
+  text-align: center;
 }
 
 #mainbg {
@@ -17,52 +19,84 @@
   z-index: -1;
   height: 100%;
   position: absolute;
+  background: linear-gradient(0deg, #EECFBA, #C5DDE800);
   right: 0;
   bottom: 0;
-  background-size: 100%;
+  background-size: cover;
   background-origin: content-box;
   background-position: right bottom;
-}
-
-#portfolio {
-  background-image: url(../img/bg2.jpg);
-  padding: 6% 0 0 0;
-  height: 110%;
-}
-
-#section3 {
-  background-image: url(../img/bg3.jpg);
-  padding: 6% 0 0 0;
 }
 
 #mainh1 {
   color: aliceblue;
   font-size: 70px;
   display: none;
-  margin-left: 30%;
-  margin-top: 10%;
+  text-align: center;
+}
+
+#mainh1 .word3{
+  font-family: Disney;
+  font-size: 130px;
+  letter-spacing: 10px;
+
 }
 
 #mainh2 {
+  text-shadow: 3px 3px 6px black, 0 0 0em black;
   color: aliceblue;
-  font-size: 50px;
-  display: none;
-  margin-left: 25%;
-  
+  font-size: 40px;
+  display: none;  
+  text-align: center;
 }
 
-#imgM{
-  position: fixed;
-  top: 50%;
-  left: -60px;
-  right: 25px;
-  bottom: 10%;
+#icons{
+  position: absolute;
+  top: 40vh;
+  text-shadow: none;
+  width:100%;
   margin: 5%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content:center;
+  filter:blur(1000000000000000000000000000px);
 }
-#img1{
-  margin-left: 7%;
-  border-radius: 100%;
+
+.icon{
+  cursor: pointer;
+  background-color: #FFFFFF90;
+  border-radius: 10px;
+  height: 35vh;
+  width: 20vw;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  filter:invert(100%);
+  font-size: 40px;
+  color:0x000000;
 }
+.icon p{
+  color:#000000;
+  margin-top: 27vh;
+}
+#icon_portfolio{  
+  background-image: url('../img/icons/portfolio.svg');
+
+}
+
+#icon_about{
+  margin-left: 5vw;
+  background-image: url('../img/icons/about.svg');
+
+}
+
+#icon_order{
+  margin-left: 5vw;
+  background-image: url('../img/icons/order.svg');
+  background-position: 50% 20%;
+}
+
+
 
 
 

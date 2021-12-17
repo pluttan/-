@@ -1,0 +1,25 @@
+#about {
+  background-image: url('../img/Gp.png');
+  padding: 6% 0 0 0;
+  height: 110%;
+}
+#text_about{
+  font-family: Comfortaa;
+  user-select:none;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  font-size: large;
+  position: fixed;
+  left: 60%;
+  right: 9%;
+  top: 30%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: left;
+}
+#text_cont{
+  width: 40%;
+  height: 40%;
+  background-color: aquamarine;
+}
