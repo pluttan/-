@@ -8,7 +8,6 @@ body {
     height: 100%;
     background-color: white;
     color: white;
-    padding: auto;
     Position: absolute;
 }
 
@@ -17,22 +16,36 @@ body {
     margin: 0;
 }
 
+td {
+    padding: 5px 50px;
+    opacity: 0.5;
+}
+
 #futer table {
+    margin-top: 3vh;
     z-index: 1745745;
     align-items: center;
     Position: absolute;
     display: flex;
     background: black;
-    margin-left: 45vw;
+    margin-left: 10vw;
+}
+
+.line {
+    margin-top: 1vh;
+    width: 100vw;
+    height: 1vh;
+    border-top-width: 5px;
+    border-top-style: dashed;
+    border-top-color: blueviolet;
 }
 
 .flex-item {
-    align-items: center;
     Position: absolute;
     display: flex;
     background: black;
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -40,9 +53,8 @@ body {
 #instagram {
     background-image: url('instagram2.png');
     margin: 10px;
-    margin-left: 40%;
-    width: 2.5%;
-    height: 10%;
+    width: 6.5%;
+    height: 35%;
     z-index: 10000;
 }
 
@@ -62,24 +74,28 @@ body {
     background-image: url('youtube2.png');
 }
 
+#telegramm {
+    background-image: url('telegramm2.png');
+}
+
 .transparent {
     opacity: 0.3;
 }
 
 .socnet {
-    top: 10vh;
-    width: 2.5%;
-    height: 10%;
+    width: 6.5%;
+    height: 35%;
     z-index: 10000;
     margin: 10px;
 }
 
 #sk {
+    margin-left: 50vw;
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
     font-weight: 70;
-    margin-top: 100%;
-    margin-left: -145%;
+    margin-top: 40%;
+    margin-left: -165%;
 }
 
 a {
@@ -89,4 +105,46 @@ a {
 
 a:visited {
     color: white
+}
+
+.fish {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-weight: 100;
+    margin-top: 25vh;
+    margin-left: 2vw;
+    position: absolute;
+    display: flex;
+    background: blueviolet;
+    width: 50vw;
+    height: 25vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flexicon {
+    margin-top: 55vh;
+    margin-left: 40vw;
+    position: absolute;
+    display: flex;
+    background: black;
+    width: 40vw;
+    height: 15vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flexright {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-weight: 100;
+    margin-top: 5vh;
+    margin-left: 65vw;
+    position: absolute;
+    display: flex;
+    background: blueviolet;
+    width: 32vw;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
