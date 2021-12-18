@@ -1,27 +1,40 @@
 .preloader {
-}
+  height: 100vh;
+  z-index: 100000000;
+  position: absolute;
+  justify-content: center;
+  background-color: #242424;
 
-.preloader-remove {
-  opacity: 0;
-  z-index: -10;
 }
 
 .preloader svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 25em;
   border-radius: 3px;
   background: #242424;
   fill: none;
   stroke: #353535;
   stroke-linecap: round;
   stroke-width: 12%;
+  height: 30vh;
+  width:100vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:32vh;
+}
+
+.preloader #inf {
+  width:10vw;
+  margin:70vw
 }
 
 .preloader use {
+  width:10vw;
   stroke: #696969;
   animation: preloader 2s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 @keyframes preloader {
