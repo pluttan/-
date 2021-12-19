@@ -15,13 +15,51 @@ p {
 }
 
 #photo_of_team{
-  background-image: url('../img/Gp.png');
-  width: 600px;
-  height: 552px;
-  background-position: 0% 0%;
-  margin-left:15%;
-  margin-top:2%;
+  margin-left:5%;
+  margin-top:0;
+  width: 45%;
+  height: 60%;
+  position: relative;
 }
+
+.photo_of_team_on_about{
+  height: 20.8vh;
+  width: 10vw;
+  background-size: cover;
+  position: relative;
+}
+#photo_of_man1{
+  top:-0.5em;
+  left: 60%;
+  background-image: url('../img/photo_about/man1.png');
+}
+#photo_of_man2{
+
+  left: 10%;
+  top: -4.5em;
+  background-image: url('../img/photo_about/man2.png');
+}
+#photo_of_women1{
+
+  top: -6em;
+  left: 29%;
+  background-image: url('../img/photo_about/women1.png');
+}
+#photo_of_women2{
+
+  top: -1.2em;
+  left: 15%;
+  background-image: url('../img/photo_about/women2.png');
+}
+#photo_of_studio{
+  height: 23.8em;
+  width: 23.7em;
+  position: relative;
+  top: -25.5em;
+  left: 45%;
+  background-image: url('../img/photo_about/studio.png');
+}
+
 
 #text_about{
   font-family: Comfortaa;
