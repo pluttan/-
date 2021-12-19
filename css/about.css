@@ -46,7 +46,6 @@ p {
   background-image: url('../img/photo_about/women1.png');
 }
 #photo_of_women2{
-
   top: -1.2em;
   left: 15%;
   background-image: url('../img/photo_about/women2.png');
@@ -74,91 +73,6 @@ p {
   font-weight: 50;
   line-height: 1.5;
 }
-#text_about_man1{
-  font-family: Comfortaa;
-  font-size: 24px;
-  color: #fff;
-  text-align: left;
-  width: 25%;
-  height: 53%;
-  margin-left: 59%;
-  margin-right: 10%;
-  margin-top: -42%;
-  padding: 1%;
-  font-weight: 50;
-  line-height: 1.5;
-  position: absolute;
-  background-color: rgb(51, 51, 51);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 5%;
-  display: none;
-}
-
-#text_about_women2{
-  font-family: Comfortaa;
-  font-size: 24px;
-  color: #fff;
-  text-align: left;
-  width: 25%;
-  height: 53%;
-  margin-left: 59%;
-  margin-right: 10%;
-  margin-top: -42%;
-  padding: 1%;
-  font-weight: 50;
-  line-height: 1.5;
-  position: absolute;
-  background-color: rgb(51, 51, 51);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 5%;
-  display: none;
-}
-
-#text_about_man2{
-  font-family: Comfortaa;
-  font-size: 24px;
-  color: #fff;
-  text-align: left;
-  width: 25%;
-  height: 53%;
-  margin-left: 59%;
-  margin-right: 10%;
-  margin-top: -42%;
-  padding: 1%;
-  font-weight: 50;
-  line-height: 1.5;
-  position: absolute;
-  background-color: rgb(51, 51, 51);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 5%;
-  display: none;
-}
-
-#text_about_women2{
-  font-family: Comfortaa;
-  font-size: 24px;
-  color: #fff;
-  text-align: left;
-  width: 25%;
-  height: 53%;
-  margin-left: 59%;
-  margin-right: 10%;
-  margin-top: -42%;
-  padding: 1%;
-  font-weight: 50;
-  line-height: 1.5;
-  position: absolute;
-  background-color: rgb(51, 51, 51);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 5%;
-  opacity:0; 
-  transition: 1s;
-  display: none;
-}
 
 #H1_text_about{
   margin-left: 30%;
@@ -166,6 +80,36 @@ p {
   margin-bottom: 10%;
   text-align: left;
   font-weight: 300;
+}
+.class_of_text_about_person{
+  font-family: Comfortaa;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  width: 21vw;
+  height: 69vh;
+  font-weight: 50;
+  line-height: 1.5;
+  position: absolute;
+  margin-left: 59vw;
+  margin-top: -120vh;
+  padding:2%;
+  background-color: rgb(51, 51, 51);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 5%;
+  
+}
+#text_about_man1{
+  display: none;
+}
+#text_about_man2{
+  display: none;
+}
+#text_about_women1{
+  display: none;
+}#text_about_women2{
+  display: none;
 }
 
 
