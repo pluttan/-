@@ -7,7 +7,7 @@ body {
     margin: 0;
     height: 100%;
     background-color: white;
-    color: white;
+    color: black;
     Position: absolute;
 }
 
@@ -15,7 +15,7 @@ body {
     display: flex;
     background: red;
     width: 90vw;
-    height: 60vh;
+    height: 80vh;
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-left: 2vw;
@@ -25,8 +25,7 @@ body {
 #h2koment {
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 150%;
-    margin-left: 45vw;
+    font-size: 100%;
     margin-top: 10vh;
 }
 
@@ -34,19 +33,25 @@ body {
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
-    margin-left: 40vw;
-    margin-top: 2vh;
+    margin-left: 30vw;
+    margin-top: 3vh;
+}
+
+.image {
+    margin-top: 10vh;
+    position: absolute;
+    display: flex;
+    background-image: url(simple.jpg);
+    width: 35vw;
+    height: 35vh;
 }
 
 .flexmini {
-    margin-left: 2vw;
-    margin-top: 2vh;
-    border-radius: 4%;
+    margin-top: 5vh;
+    margin-left: 1vw;
     position: absolute;
-    margin-top: 10vh;
     display: flex;
-    background-image: url(sk.jpg);
-    width: 35vw;
+    width: 80vw;
     height: 40vh;
     background-repeat: no-repeat;
 }
