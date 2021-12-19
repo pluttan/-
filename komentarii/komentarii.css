@@ -17,7 +17,7 @@ body {
     width: 90vw;
     height: 60vh;
     background-repeat: no-repeat;
-    border-radius: 5%;
+    border-radius: 10px;
     margin-left: 2vw;
     margin-top: 10vh;
 }

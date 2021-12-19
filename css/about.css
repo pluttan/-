@@ -1,0 +1,136 @@
+#about {
+  background-color: black;
+  padding: 6% 0 0 0;
+  height: 110%;
+}
+
+p {
+  margin-top: 1%;
+  margin-bottom: -1%;
+}
+
+#wrapper{
+  display: flex;
+  position: relative;
+}
+
+#photo_of_team{
+  background-image: url('../img/Gp.png');
+  width: 600px;
+  height: 552px;
+  background-position: 0% 0%;
+  margin-left:15%;
+  margin-top:2%;
+}
+
+#text_about{
+  font-family: Comfortaa;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  width: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  padding-bottom: 10%;
+  font-weight: 50;
+  line-height: 1.5;
+}
+#text_about_man1{
+  font-family: Comfortaa;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  width: 25%;
+  height: 53%;
+  margin-left: 59%;
+  margin-right: 10%;
+  margin-top: -42%;
+  padding: 1%;
+  font-weight: 50;
+  line-height: 1.5;
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 5%;
+  display: none;
+}
+
+#text_about_women2{
+  font-family: Comfortaa;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  width: 25%;
+  height: 53%;
+  margin-left: 59%;
+  margin-right: 10%;
+  margin-top: -42%;
+  padding: 1%;
+  font-weight: 50;
+  line-height: 1.5;
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 5%;
+  display: none;
+}
+
+#text_about_man2{
+  font-family: Comfortaa;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  width: 25%;
+  height: 53%;
+  margin-left: 59%;
+  margin-right: 10%;
+  margin-top: -42%;
+  padding: 1%;
+  font-weight: 50;
+  line-height: 1.5;
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 5%;
+  display: none;
+}
+
+#text_about_women2{
+  font-family: Comfortaa;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  width: 25%;
+  height: 53%;
+  margin-left: 59%;
+  margin-right: 10%;
+  margin-top: -42%;
+  padding: 1%;
+  font-weight: 50;
+  line-height: 1.5;
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 5%;
+  opacity:0; 
+  transition: 1s;
+  display: none;
+}
+
+#H1_text_about{
+  margin-left: 30%;
+  margin-top: -20%;
+  margin-bottom: 10%;
+  text-align: left;
+  font-weight: 300;
+}
+
+
+
+
+
