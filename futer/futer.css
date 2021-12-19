@@ -1,150 +1,144 @@
 html {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    height: 100%;
-    background-color: white;
-    color: white;
-    Position: absolute;
-}
-
-#futer {
-    background-color: black;
-    margin: 0;
+  margin: 0;
+  height: 100%;
+  background-color: white;
+  color: white;
+  position: absolute;
 }
 
 td {
-    padding: 5px 50px;
-    opacity: 0.5;
+  padding: 5px 50px;
+  opacity: 0.5;
 }
 
 #futer table {
-    margin-top: 3vh;
-    z-index: 1745745;
-    align-items: center;
-    Position: absolute;
-    display: flex;
-    background: black;
-    margin-left: 10vw;
+  margin-top: 3vh;
+  z-index: 1745745;
+  align-items: center;
+  position: absolute;
+  display: flex;
+  background: black;
+  margin-left: 10vw;
 }
 
 .line {
-    margin-top: 1vh;
-    width: 100vw;
-    height: 1vh;
-    border-top-width: 5px;
-    border-top-style: dashed;
-    border-top-color: blueviolet;
+  margin-top: 1vh;
+  width: 100vw;
+  height: 1vh;
+  border-top-width: 5px;
+  border-top-style: dashed;
+  border-top-color: blueviolet;
 }
 
 .flex-item {
-    Position: absolute;
-    display: flex;
-    background: black;
-    width: 100vw;
-    height: 70vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#instagram {
-    background-image: url('instagram2.png');
-    margin: 10px;
-    width: 6.5%;
-    height: 35%;
-    z-index: 10000;
-}
-
-#facebook {
-    background-image: url('facebook2.png');
-}
-
-#vk {
-    background-image: url('vk2.png');
-}
-
-#twitch {
-    background-image: url('twitch2.png')
-}
-
-#youtube {
-    background-image: url('youtube2.png');
-}
-
-#telegramm {
-    background-image: url('telegramm2.png');
+  position: absolute;
+  background: black;
+  width: 100vw;
+  height: 70vh;
 }
 
 .transparent {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
-.socnet {
-    width: 6.5%;
-    height: 35%;
-    z-index: 10000;
-    margin: 10px;
+.futer_icons {
+  margin-top: calc(70vh - 20px - 4vh - 20px);
+  margin-left: 40vw;
+  position: absolute;
+  display: flex;
+  background: black;
+  width: 27vw;
+  height: 4vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#sk {
-    margin-left: 50vw;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100%;
-    font-weight: 70;
-    margin-top: 40%;
-    margin-left: -165%;
+.futer_icon {
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  margin: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+#futer_text_date {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1vh;
+  height: 10px;
+  font-weight: 70;
+  text-align: center;
+  margin-top: calc(70vh - 1vh - 1vh);
+  margin-right: calc(100vw/2 - 21vw);
+  width:100vw;
+  color: white;
+  text-decoration: none;
 }
 
-a:visited {
-    color: white
+#instagram {
+  background-image: url("instagram2.png");
+  margin: 10px;
+  z-index: 10000;
+}
+
+#facebook {
+  background-image: url("facebook2.png");
+}
+
+#vk {
+  background-image: url("vk2.png");
+}
+
+#twitch {
+  background-image: url("twitch2.png");
+}
+
+#youtube {
+  background-image: url("youtube2.png");
+}
+
+#telegramm {
+  background-image: url("telegramm2.png");
 }
 
 .fish {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 500%;
-    font-weight: 100;
-    margin-top: 25vh;
-    margin-left: 2vw;
-    position: absolute;
-    display: flex;
-    background: blueviolet;
-    width: 50vw;
-    height: 25vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 500%;
+  font-weight: 100;
+  margin-top: 25vh;
+  margin-left: 2vw;
+  position: absolute;
+  display: flex;
+  background: blueviolet;
+  width: 50vw;
+  height: 25vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.flexicon {
-    margin-top: 55vh;
-    margin-left: 40vw;
-    position: absolute;
-    display: flex;
-    background: black;
-    width: 40vw;
-    height: 15vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+.maps {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 500%;
+  font-weight: 100;
+  margin-top: 5vh;
+  margin-left: 48vw;
+  position: absolute;
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.flexright {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 500%;
-    font-weight: 100;
-    margin-top: 5vh;
-    margin-left: 65vw;
-    position: absolute;
-    display: flex;
-    background: blueviolet;
-    width: 32vw;
-    height: 40vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+.maps iframe{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+    border:0;
 }

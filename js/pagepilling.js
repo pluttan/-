@@ -9,7 +9,7 @@ $(document).ready(function () {
         afterLoad: function(anchorLink, index){
 			//using index
 			if(index == 2){
-				interval_portfolio_images = setInterval(portfolio_animation, 100);
+				interval_portfolio_images = setInterval(portfolio_animation, 50);
 			}
             else{
                 clearInterval(interval_portfolio_images);

@@ -78,5 +78,6 @@
   color: aliceblue;
   font-family: Comfortaa;
   margin: 2vh 3vw;
+  cursor:pointer;
 }
-#portfolio_h1 h2:hover{color:grey;cursor:pointer;}
+#portfolio_h1 h2:hover{color:grey;}
