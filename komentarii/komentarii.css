@@ -1,0 +1,52 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: white;
+    color: white;
+    Position: absolute;
+}
+
+.flex {
+    display: flex;
+    background: red;
+    width: 90vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    margin-left: 2vw;
+    margin-top: 10vh;
+}
+
+#h2koment {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    margin-left: 45vw;
+    margin-top: 10vh;
+}
+
+#h1koment {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    margin-left: 40vw;
+    margin-top: 2vh;
+}
+
+.flexmini {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    border-radius: 4%;
+    position: absolute;
+    margin-top: 10vh;
+    display: flex;
+    background-image: url(sk.jpg);
+    width: 35vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+}
