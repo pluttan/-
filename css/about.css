@@ -17,8 +17,8 @@ p {
 #photo_of_team{
   margin-left:5%;
   margin-top:0;
-  width: 45%;
-  height: 60%;
+  width: 45vw;
+  height: 50vh;
   position: relative;
 }
 
@@ -81,6 +81,7 @@ p {
   text-align: left;
   font-weight: 300;
 }
+
 .class_of_text_about_person{
   font-family: Comfortaa;
   font-size: 24px;
@@ -98,7 +99,6 @@ p {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 5%;
-  
 }
 #text_about_man1{
   display: none;
@@ -109,7 +109,7 @@ p {
 #text_about_women1{
   display: none;
 }#text_about_women2{
-  display: none;
+  display: block;
 }
 
 
