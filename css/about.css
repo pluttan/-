@@ -1,16 +1,15 @@
 #about {
-  background-color: black;
   padding: 6% 0 0 0;
   height: 110%;
 }
 #about_bg{
   position: absolute;
   width:100vw;
-  height: 100vh;
+  height: calc(100vh + 10px);
   margin-top: -100px;
   background: url('../img/nature/nature_104.jpg');
   background-size: cover;
-  filter: grayscale(0.5) brightness(2);
+  filter: grayscale(0.5) brightness(1);
   z-index: 1;
 }
 p {
@@ -38,7 +37,8 @@ p {
   position: relative;
   border-radius: 50%;
   z-index: 10;
-  border: thick double #32a1ce00;
+  border:2px dotted #ffffff00;
+  box-shadow: 12px 12px 12px 12px rgba(0, 0, 0,0);
   background-repeat: no-repeat;
 }
 #photo_of_man1{
@@ -70,13 +70,14 @@ p {
   top: -25.5em;
   left: 45%;
   background-image: url('../img/photo_about/studio.png');
+  border: 2px dotted #fff; box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, .2); 
 }
 
 .class_of_text_about_person{
   width: 25%;
   font-weight: 50;
   line-height: 1.5;
-
+  height: 40vw !important ;
   font-family: Comfortaa;
   font-size: 24px;
   color: rgb(255, 255, 255);
@@ -93,7 +94,7 @@ p {
   z-index: 10;
 }
 #text_about{
-  display:none;
+  display:block;
 }
 #text_about_man1{
   display:none;
@@ -105,5 +106,5 @@ p {
   display: none;
 }
 #text_about_women2{
-  display: block;
+  display: none;
 }
