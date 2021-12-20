@@ -8,7 +8,7 @@ $(document).ready(function () {
     photo = 6;
     for (list = 1; list < lists + 1; list++) {
         for (p = 1; p < photo + 2; p++) {
-            $("#portfolio_image_" + list + "_" + p).css({ "background-image": "url(img/imgsformainbg/" + String(getRandomInt(31)) + ".webp)", });
+            $("#portfolio_image_" + list + "_" + p).css({ "background-image": "url(img/nature/nature_" + String(getRandomInt(31)) + ".jpg)", });
         }
     }
     i = 0;
@@ -16,7 +16,7 @@ $(document).ready(function () {
         $("#portfolio_images").css({ "margin-left": -40-i });
         i++;
         console.log(i);
-        if (i % 1000 == 0) {
+        if (i % 2000 == 0) {
             lists++;
             portappend = '<div class="portfolio_images_list" id="portfolio_images_list_' + lists + '">'
             for (p = 1; p < photo + 1; p++) {
@@ -25,7 +25,7 @@ $(document).ready(function () {
             $("#portfolio_images").append(portappend + '</div>');
             function get_bg() {
                 for (p = 1; p < photo + 1; p++) {
-                    $("#portfolio_image_" + lists + "_" + p).css({ "background-image": "url(img/imgsformainbg/" + String(getRandomInt(31)) + ".webp)", });
+                    $("#portfolio_image_" + lists + "_" + p).css({ "background-image": "url(img/nature/nature_" + String(getRandomInt(31)) + ".jpg)" });
                 };
             };
             setTimeout(() => get_bg(), 100)

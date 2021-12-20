@@ -1,6 +1,29 @@
 #comments {
-    background-image: url(../img/bg2.jpg);
-    padding: 6% 0 0 0;
-    height: 100vh;
-     
-  }
+  background: #353535;
+
+  height: 100vh;
+}
+#up_of_comments{
+  display:none;
+
+  background-color: #00000070;
+  margin-top: 2vh;
+  padding: 2vh;
+  padding-bottom: 3vh;
+  cursor:pointer;
+  font-size: 100px;
+  width:30vw;
+  margin-left: 35vw;
+  border-radius: 200px;
+}
+#up_of_comments span{
+  font-size: 60px;
+}
+#scroll_comments {
+  color: black;
+  background-image: url(../img/bg2.jpg);
+  padding: 6% 0 0 0;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
