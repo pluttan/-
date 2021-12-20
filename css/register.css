@@ -1,0 +1,175 @@
+.register_container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 30vw;
+  height: 80vh;
+  padding-top: 5vh;
+  position: absolute;
+  z-index: 100000;
+  border-radius: 30px;
+  text-shadow: 3px 3px 6px black, 0 0 0em black;
+  margin: 0 auto;
+  margin: 2.5vh 35vw;
+  display: none;
+}
+.register_bg {
+  position: absolute;
+  background-image: url(../img/nature/nature_20.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  line-height: 17vh;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+  filter: brightness(70%);
+  text-align: center;
+}
+.register {
+  font-family: Comfortaa;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+}
+.register form {
+  text-align: center;
+  line-height: 2;
+}
+.register p {
+  font-size: 40px;
+
+  margin: 5vh 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.webflow-style-input,
+.webflow-style-input2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.webflow-style-input:after,
+.webflow-style-input2:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-position: 0% 0%;
+  background: linear-gradient(
+    to left,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #c0c0c0c0,
+    #90909090,
+    #60606060,
+    #30303030,
+    #00000000,
+    #30303030,
+    #60606060,
+    #90909090,
+    #c0c0c0c0,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff
+  );
+  background-size: 500% auto;
+
+  animation: gradient 3s linear infinite;
+}
+.webflow-style-input2:after {
+  background: linear-gradient(
+    to left,
+    #ff0000,
+    #ff0000,
+    #ff0000,
+    #ff0000,
+    #ff0000,
+    #c00000c0,
+    #90000090,
+    #60000060,
+    #30000030,
+    #00000000,
+    #30000030,
+    #60000060,
+    #90000090,
+    #c00000c0,
+    #ff0000,
+    #ff0000,
+    #ff0000,
+    #ff0000,
+    #ff0000
+  );
+  background-size: 500% auto;
+
+  animation: gradient 3s linear infinite;
+}
+.webflow-style-input input {
+  flex-grow: 1;
+  color: white;
+  background-color: #00000070;
+  border: none;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+}
+.webflow-style-input input::-webkit-input-placeholder {
+  color: #7881a1;
+}
+.webflow-style-input input:focus-visible {
+  outline: 0;
+}
+
+.webflow-style-input2 input {
+  flex-grow: 1;
+  color: white;
+  background-color: #00000070;
+  border: none;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+}
+.webflow-style-input2 input::-webkit-input-placeholder {
+  color: #7881a1;
+}
+.webflow-style-input2 input:focus-visible {
+  outline: 0;
+}
