@@ -27,31 +27,22 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
     margin-top: 10vh;
+    float: left;
 }
 
 #h1koment {
-    position: absolute;
+    position: relative;
     font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
     margin-left: 30vw;
     margin-top: 3vh;
 }
 
-.image {
+#image {
+    position: relative;
     margin-top: 10vh;
-    position: absolute;
-    display: flex;
     background-image: url(simple.jpg);
-    width: 35vw;
-    height: 35vh;
-}
-
-.flexmini {
-    margin-top: 5vh;
-    margin-left: 1vw;
-    position: absolute;
-    display: flex;
-    width: 80vw;
-    height: 40vh;
-    background-repeat: no-repeat;
+    width: 50vh;
+    height: 50vh;
+    float: left;
 }
