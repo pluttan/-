@@ -42,13 +42,13 @@ $(window).on("load", function () {
   $("#mainbg").css({ "background-image": "url(img/imgsformainbg/" + String(getRandomInt(31)) + ".webp)", });
   $("#imgM").hide(10);
   entreg = false;
-  $("#hat").show(200);
+  $("#hat").show(10);
   $(".twobar").removeClass("cross").addClass("hamburger");
   $("#hat_head").css({
     "border-bottom-left-radius": "10px",
     "border-top-left-radius": "10px",
   });
-  $("#hat").hide(200);
+  $("#hat").hide(10);
   function disp() {
     $("#hat_container").css({ "z-index": "1000000000" });
     $(".preloader").css({ display: "none" });
