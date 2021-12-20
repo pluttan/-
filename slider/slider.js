@@ -1,4 +1,4 @@
-$(function(){
+(function(){
     if($('.gallery-wrapper').length){
         var galleryThumbs = new Swiper('.gallery-wrapper .content .gallery.thumb .swiper-container', {
             speed: 900,
@@ -90,8 +90,3 @@ $(function(){
 });
 
 
-$(window).on("load", function() {
-    setTimeout(function(){
-        $('.loader').fadeOut();
-    }, 1000);
-});
