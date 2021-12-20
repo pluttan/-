@@ -39,10 +39,5 @@ body {
 }
 
 #image {
-    position: relative;
-    margin-top: 10vh;
-    background-image: url(simple.jpg);
-    width: 50vh;
-    height: 50vh;
-    float: left;
+    padding: 5px;
 }
