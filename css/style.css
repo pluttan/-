@@ -67,6 +67,7 @@ body {
   top: 87.5vh;
   height: 25vh;
   margin-bottom: 12.5vh;
+  z-index: 100000000;
   width: 100%;
   background: linear-gradient(180deg, #00000000,#000000, #00000000);
 }
@@ -75,6 +76,7 @@ body {
   position: absolute;
   height: 25vh;
   margin-top: -12.5vh;
+  z-index: 100000000;
   width: 100%;
   background: linear-gradient(180deg, #00000000,#000000, #00000000);
 }

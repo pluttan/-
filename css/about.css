@@ -3,7 +3,16 @@
   padding: 6% 0 0 0;
   height: 110%;
 }
-
+#about_bg{
+  position: absolute;
+  width:100vw;
+  height: 100vh;
+  margin-top: -100px;
+  background: url('../img/nature/nature_104.jpg');
+  background-size: cover;
+  filter: grayscale(0.5) brightness(2);
+  z-index: 1;
+}
 p {
   margin-top: 1%;
   margin-bottom: -1%;
@@ -23,10 +32,14 @@ p {
 }
 
 .photo_of_team_on_about{
-  height: 20.8vh;
+  height: 10vw;
   width: 10vw;
-  background-size: cover;
+  background-size: contain;
   position: relative;
+  border-radius: 50%;
+  z-index: 10;
+  border: thick double #32a1ce00;
+  background-repeat: no-repeat;
 }
 #photo_of_man1{
   top:-0.5em;
@@ -59,60 +72,38 @@ p {
   background-image: url('../img/photo_about/studio.png');
 }
 
-
-#text_about{
-  font-family: Comfortaa;
-  font-size: 24px;
-  color: #fff;
-  text-align: left;
+.class_of_text_about_person{
   width: 25%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  padding-bottom: 10%;
   font-weight: 50;
   line-height: 1.5;
-}
 
-#H1_text_about{
-  margin-left: 30%;
-  margin-top: -20%;
-  margin-bottom: 10%;
-  text-align: left;
-  font-weight: 300;
-}
-
-.class_of_text_about_person{
   font-family: Comfortaa;
   font-size: 24px;
   color: rgb(255, 255, 255);
   text-align: left;
-  width: 21vw;
-  height: 69vh;
-  font-weight: 50;
-  line-height: 1.5;
+  height: max-content;
   position: absolute;
   margin-left: 59vw;
-  margin-top: -120vh;
   padding:2%;
-  background-color: rgb(51, 51, 51);
+  text-shadow: 3px 3px 6px black, 0 0 1em black;
+  background-color: #00000010;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 5%;
+  border-radius: 50px;
+  z-index: 10;
+}
+#text_about{
+  display:none;
 }
 #text_about_man1{
-  display: none;
+  display:none;
 }
 #text_about_man2{
   display: none;
 }
 #text_about_women1{
   display: none;
-}#text_about_women2{
+}
+#text_about_women2{
   display: block;
 }
-
-
-
-
-
