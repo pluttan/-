@@ -26,8 +26,8 @@ p {
 #photo_of_team{
   margin-left:5%;
   margin-top:0;
-  width: 45%;
-  height: 60%;
+  width: 45vw;
+  height: 50vh;
   position: relative;
 }
 
@@ -76,6 +76,7 @@ p {
   width: 25%;
   font-weight: 50;
   line-height: 1.5;
+
   font-family: Comfortaa;
   font-size: 24px;
   color: rgb(255, 255, 255);
@@ -89,7 +90,6 @@ p {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 50px;
-  
   z-index: 10;
 }
 #text_about{
