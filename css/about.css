@@ -23,9 +23,9 @@ p {
 }
 
 .photo_of_team_on_about{
-  height: 20.8vh;
+  height: 10vw;
   width: 10vw;
-  background-size: cover;
+  background-size: contain;
   position: relative;
 }
 #photo_of_man1{
