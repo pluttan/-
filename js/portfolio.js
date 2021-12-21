@@ -28,8 +28,7 @@ $(document).ready(function () {
     portfolio_animation = function () {
         $("#portfolio_images").css({ "margin-left": -40 - i });
         i++;
-        console.log(i);
-        if (i % 2000 == 0) {
+        if (i % 1500 == 0) {
             lists++;
             portappend = '<div class="portfolio_images_list" id="portfolio_images_list_' + lists + '">'
             for (p = 1; p < photo + 1; p++) {

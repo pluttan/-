@@ -1,7 +1,6 @@
 
 $(document).on("click", "#hat_enter", function () {
     $('#black_bg').show();
-    console.log("enter");
     $('.enter_container').show();
     $('.register_container').hide();
     $("#hat_head").css({
@@ -13,14 +12,10 @@ $(document).on("click", "#hat_enter", function () {
 });
 
 $(document).on("click", "#button_enter", function () {
-    console.log("dh");
     var arr = $('#email_enter').serializeArray();
-    console.log('Поле: ' + arr);
     let email = arr[0].value; gemail = false;
     var arr = $('#password_enter').serializeArray();
     let password = arr[0].value; gpassword = false;
-    console.log(password.length);
-    console.log(isValidEmailAddress(email));
     if (email != 0) {
         if (!isValidEmailAddress(email)) {
             $("#email_border_enter").removeClass('webflow-style-input').addClass('webflow-style-input2');
