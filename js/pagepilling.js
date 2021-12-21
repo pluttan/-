@@ -9,10 +9,12 @@ $(document).ready(function () {
         afterLoad: function(anchorLink, index){
 			//using index
 			if(index == 2){
-				interval_portfolio_images = setInterval(portfolio_animation, 100);
+				try{interval_portfolio_images = setInterval(portfolio_animation, 100);}
+                catch{};
 			}
             else{
-                clearInterval(interval_portfolio_images);
+                try{clearInterval(interval_portfolio_images);}
+                catch{};
             }
         }
     });
