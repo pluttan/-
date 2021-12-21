@@ -38,7 +38,7 @@ $(document).ready(function () {
             $("#portfolio_images").append(portappend + '</div>');
             function get_bg() {
                 for (p = 1; p < photo + 1; p++) {
-                    $("#portfolio_image_" + lists + "_" + p).css({ "background-image": "url(img/nature/nature_" + String(getRandomInt(31)) + ".jpg)" });
+                    $("#portfolio_image_" + lists + "_" + p).css(getimage());
                 };
             };
             setTimeout(() => get_bg(), 100)
