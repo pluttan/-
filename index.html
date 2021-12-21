@@ -1,300 +1,496 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <!-- META_TEGS -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta
-      name="description"
-      content="Сайт студии фотографии. Фотографы-портретисты создадут 
+
+<head>
+  <!-- META_TEGS -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Сайт студии фотографии. Фотографы-портретисты создадут 
       идеальные условия для ваших красочных,
-      уникальных воспоминаний."
-    />
-    <meta name="author" content="pluttan" />
-    <meta name="robots" content="index, follow" />
-    <meta name="yandex" content="noyaca" />
+      уникальных воспоминаний." />
+  <meta name="author" content="pluttan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="yandex" content="noyaca" />
 
-    <title>Nafany - cтудия фотографии в Москве</title>
-    <link rel="shortcut icon" href="img/icons/photo.svg" type="image/x-icon">
+  <title>Nafany - cтудия фотографии в Москве</title>
+  <link rel="shortcut icon" href="img/icons/photo.svg" type="image/x-icon">
 
-    <!-- LIBS -->
-    <link rel="stylesheet" type="text/css" href="libs/pagepiling.css" />
-    <link rel="stylesheet" type="text/css" href="libs/animate.css" />
+  <!-- LIBS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.0.2/swiper-bundle.min.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script type="text/javascript" src="libs/pages.js"></script>
-    <script type="text/javascript" src="libs/lettering.js"></script>
-    <script type="text/javascript" src="libs/textillate.js"></script>
+  <link rel="stylesheet" type="text/css" href="libs/pagepiling.css" />
+  <link rel="stylesheet" type="text/css" href="libs/animate.css" />
 
-    <!-- SCRIPT&STYLE -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
-    <link rel="stylesheet" type="text/css" href="css/hat.css" />
-    <link rel="stylesheet" type="text/css" href="css/enter.css" />
-    <link rel="stylesheet" type="text/css" href="css/register.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper@6.0.2/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="libs/pages.js"></script>
+  <script type="text/javascript" src="libs/lettering.js"></script>
+  <script type="text/javascript" src="libs/textillate.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
-    <link rel="stylesheet" type="text/css" href="css/about.css" />
-    <link rel="stylesheet" type="text/css" href="css/order.css" />
-    <link rel="stylesheet" type="text/css" href="css/comments.css" />
+  <!-- SCRIPT&STYLE -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/preloader.css" />
+  <link rel="stylesheet" type="text/css" href="css/hat.css" />
+  <link rel="stylesheet" type="text/css" href="css/enter.css" />
+  <link rel="stylesheet" type="text/css" href="css/register.css" />
 
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/hat.js"></script>
-    <script type="text/javascript" src="js/enter.js"></script>
-    <script type="text/javascript" src="js/register.js"></script>
-    <script type="text/javascript" src="js/pagepilling.js"></script>
-  
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/portfolio.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+  <link rel="stylesheet" type="text/css" href="css/about.css" />
+  <link rel="stylesheet" type="text/css" href="css/order.css" />
+  <link rel="stylesheet" type="text/css" href="css/comments.css" />
 
-  </head>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/preloader.js"></script>
+  <script type="text/javascript" src="js/hat.js"></script>
+  <script type="text/javascript" src="js/enter.js"></script>
+  <script type="text/javascript" src="js/register.js"></script>
+  <script type="text/javascript" src="js/pagepilling.js"></script>
 
-  <body>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/portfolio.js"></script>
+  <script type="text/javascript" src="js/about.js"></script>
+  <script type="text/javascript" src="js/order.js"></script>
+  <script type="text/javascript" src="js/comments.js"></script>
 
-    <!-- PRELOADER -->
-    <div class="preloader">
-      <svg viewBox="-2000 -1000 4000 2000">
-        <path
-          id="inf"
-          d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"
-        ></path>
-        <use
-          xlink:href="#inf"
-          stroke-dasharray="1570 5143"
-          stroke-dashoffset="6713px"
-        ></use>
-      </svg>
-    </div>
+</head>
 
-    <!-- HAT -->
-    <div id="hat_container">
-      <div id="hat">
-        <h2 id="hat_h2" align="center">
-          <div
-            class="hat_a"
-            id="hat_main"
-            onClick="document.location.href = '#main';hide_onclick()"
-          >
-            Главная
-          </div>
-          <div
-            class="hat_a"
-            id="hat_portfolio"
-            onClick="document.location.href = '#portfolio';hide_onclick()"
-          >
-            Портфолио
-          </div>
-          <div
-            class="hat_a"
-            id="hat_about"
-            onClick="document.location.href = '#about';hide_onclick()"
-          >
-            Обо мне
-          </div>
-          <div
-            class="hat_a"
-            id="hat_order"
-            onClick="document.location.href = '#order';hide_onclick()"
-          >
-            Заказ работ
-          </div>
-          <div
-            class="hat_a"
-            id="hat_komments"
-            onClick="document.location.href = '#comments';hide_onclick()">
-            Коментарии
-          </div>
-          <div style="display: flex;justify-content:space-around;">
-            <input class="button" id="hat_enter" type="button" value="Войти">
-            <input class="button" id="hat_register" type="button" value="Регистрация">
-          </div>
-        </h2>
-      </div>
-      <div id="hat_head">
-        <div class="twobar hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <svg viewBox="-2000 -1000 4000 2000">
+      <path id="inf" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
+      <use xlink:href="#inf" stroke-dasharray="1570 5143" stroke-dashoffset="6713px"></use>
+    </svg>
+  </div>
+
+  <!-- HAT -->
+  <div id="hat_container">
+    <div id="hat">
+      <h2 id="hat_h2" align="center">
+        <div class="hat_a" id="hat_main" onClick="document.location.href = '#main';hide_onclick()">
+          Главная
         </div>
+        <div class="hat_a" id="hat_portfolio" onClick="document.location.href = '#portfolio';hide_onclick()">
+          Портфолио
+        </div>
+        <div class="hat_a" id="hat_about" onClick="document.location.href = '#about';hide_onclick()">
+          О нас
+        </div>
+        <div class="hat_a" id="hat_order" onClick="document.location.href = '#order';hide_onclick()">
+          Заказ работ
+        </div>
+        <div class="hat_a" id="hat_komments" onClick="document.location.href = '#comments';hide_onclick()">
+          Коментарии
+        </div>
+        <div style="display: flex;justify-content:space-around;">
+          <input class="button" id="hat_enter" type="button" value="Войти">
+          <input class="button" id="hat_register" type="button" value="Регистрация">
+        </div>
+      </h2>
+    </div>
+    <div id="hat_head">
+      <div class="twobar hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
     </div>
+  </div>
 
-    <!-- ENTER -->
-    <div id="black_bg"></div>
-    <ul class="enter_container">
-      <li class="enter_bg"></li>
-      <li class="enter">
-          <p>Войти</p>
-          <form id="form_enter">
-              <legend>E-mail</legend>
-              <div class="webflow-style-input" id="email_border_enter">
-                <input id="email_enter" name="email_enter" type="text" value=""/>
-              </div>
-              <legend>Пароль</legend>
-              <div class="webflow-style-input" id="password_border_enter">
-                <input id="password_enter" name="password_enter" type="password"></input>
-              </div>
-              <input class="button" id="hat_register" type="button" value="Регистрация">
-              <input class="button" id="button_enter" type="button" value="Войти">
-          </form>
-      </li>
-    </ul>
-
-    <!-- REGISTRATION -->
-    <div id="black_bg"></div>
-    <ul class="register_container">
-      <li class="register_bg"></li>
-      <li class="register">
-          <p>Зарегстрироваться</p>
-          <form id="form_register">
-              <legend>Имя</legend>
-              <div class="webflow-style-input" id="name_border_register">
-                <input id="name_register" name="name_register" type="text" value=""/>
-              </div>
-              <legend>E-mail</legend>
-              <div class="webflow-style-input" id="email_border_register">
-                <input id="email_register" name="email_register" type="text" value=""/>
-              </div>
-              <legend>Пароль</legend>
-              <div class="webflow-style-input" id="password_border_register">
-                <input id="password_register" name="password_register" type="password"></input>
-              </div>
-              <legend>Повтор пароля</legend>
-              <div class="webflow-style-input" id="reppassword_border_register">
-                <input id="reppassword_register" name="reppassword_register" type="password"></input>
-              </div>
-              <input class="button" id="hat_enter" type="button" value="Войти">
-              <input class="button" id="button_register" type="button" value="Регистрация">
-          </form>
-      </li>
-    </ul>
-
-    <div id="pagepiling">
-      <div class="section" id="main">
-        <div id="mainbg"></div>
-        <div id="vinet_top"></div>
-
-        <h1 id="mainh1">Студия фотографии <p>Nafany</p></h1>
-        <h2 id="mainh2">Фотографы-портретисты создадут идеальные условия для ваших красочных,уникальных воспоминаний.</h2>
-
-        <div id="icons">
-          <div
-            class="icon"
-            id="icon_portfolio"
-            onClick="document.location.href = '#portfolio'"
-          >
-            <p>Портфолио</p>
-          </div>
-          <div
-            class="icon"
-            id="icon_about"
-            onClick="document.location.href = '#about'"
-          >
-            <p>О нас</p>
-          </div>
-          <div
-            class="icon"
-            id="icon_order"
-            onClick="document.location.href = '#order'"
-          >
-            <p>Заказ работ</p>
-          </div>
+  <!-- ENTER -->
+  <div id="black_bg"></div>
+  <ul class="enter_container">
+    <li class="enter_bg"></li>
+    <li class="enter">
+      <p>Войти</p>
+      <form id="form_enter">
+        <legend>E-mail</legend>
+        <div class="webflow-style-input" id="email_border_enter">
+          <input id="email_enter" name="email_enter" type="text" value="" />
         </div>
+        <legend>Пароль</legend>
+        <div class="webflow-style-input" id="password_border_enter">
+          <input id="password_enter" name="password_enter" type="password"></input>
+        </div>
+        <input class="button" id="hat_register" type="button" value="Регистрация">
+        <input class="button" id="button_enter" type="button" value="Войти">
+      </form>
+    </li>
+  </ul>
 
-        <div id="vinet_bottom"></div>
+  <!-- REGISTRATION -->
+  <div id="black_bg"></div>
+  <ul class="register_container">
+    <li class="register_bg"></li>
+    <li class="register">
+      <p>Зарегстрироваться</p>
+      <form id="form_register">
+        <legend>Имя</legend>
+        <div class="webflow-style-input" id="name_border_register">
+          <input id="name_register" name="name_register" type="text" value="" />
+        </div>
+        <legend>E-mail</legend>
+        <div class="webflow-style-input" id="email_border_register">
+          <input id="email_register" name="email_register" type="text" value="" />
+        </div>
+        <legend>Пароль</legend>
+        <div class="webflow-style-input" id="password_border_register">
+          <input id="password_register" name="password_register" type="password"></input>
+        </div>
+        <legend>Повтор пароля</legend>
+        <div class="webflow-style-input" id="reppassword_border_register">
+          <input id="reppassword_register" name="reppassword_register" type="password"></input>
+        </div>
+        <input class="button" id="hat_enter" type="button" value="Войти">
+        <input class="button" id="button_register" type="button" value="Регистрация">
+      </form>
+    </li>
+  </ul>
+
+  <div id="pagepiling">
+    <div class="section" id="main">
+      <div id="mainbg"></div>
+      <div id="vinet_top"></div>
+
+      <h1 id="mainh1">Студия фотографии <p>Nafany</p>
+      </h1>
+      <h2 id="mainh2">Наши фотографы создадут идеальные условия для ваших красочных, уникальных воспоминаний.
+      </h2>
+
+      <div id="icons">
+        <div class="icon" id="icon_portfolio" onClick="document.location.href = '#portfolio'">
+          <p>Портфолио</p>
+        </div>
+        <div class="icon" id="icon_about" onClick="document.location.href = '#about'">
+          <p>О нас</p>
+        </div>
+        <div class="icon" id="icon_order" onClick="document.location.href = '#order'">
+          <p>Заказ работ</p>
+        </div>
       </div>
-      <div class="section" id="portfolio">
-        <!-- <div id="vinet_top"></div> -->
-        <div id="portfolio_h1">
-          <div id="portfolio_h1bg"></div>
-          <h1>Портфолио</h1>
-          <h2>Природа</h2>
-          <h2>Портреты</h2>
-          <h2>Город</h2>
-          <h2>Животные</h2>
-        </div>
-        <div id="portfolio_images">
-          <div class="portfolio_images_list" id="portfolio_images_list_1">
-              <div class="portfolio_image_1" id="portfolio_image_1_1"></div>
-              <div class="portfolio_image_2" id="portfolio_image_1_2"></div>
-              <div class="portfolio_image_3" id="portfolio_image_1_3"></div>
-              <div class="portfolio_image_4" id="portfolio_image_1_4"></div>
-              <div class="portfolio_image_5" id="portfolio_image_1_5"></div>
-              <div class="portfolio_image_6" id="portfolio_image_1_6"></div>
-          </div>
-          <div class="portfolio_images_list" id="portfolio_images_list_2">
-              <div class="portfolio_image_1" id="portfolio_image_2_1"></div>
-              <div class="portfolio_image_2" id="portfolio_image_2_2"></div>
-              <div class="portfolio_image_3" id="portfolio_image_2_3"></div>
-              <div class="portfolio_image_4" id="portfolio_image_2_4"></div>
-              <div class="portfolio_image_5" id="portfolio_image_2_5"></div>
-              <div class="portfolio_image_6" id="portfolio_image_2_6"></div>
-          </div>
-          <div class="portfolio_images_list" id="portfolio_images_list_2">
-              <div class="portfolio_image_1" id="portfolio_image_3_1"></div>
-              <div class="portfolio_image_2" id="portfolio_image_3_2"></div>
-              <div class="portfolio_image_3" id="portfolio_image_3_3"></div>
-              <div class="portfolio_image_4" id="portfolio_image_3_4"></div>
-              <div class="portfolio_image_5" id="portfolio_image_3_5"></div>
-              <div class="portfolio_image_6" id="portfolio_image_3_6"></div>
-          </div>
-        </div>
-        <div id="vinet_bottom"></div>
+
+      <div id="vinet_bottom"></div>
+    </div>
+    <div class="section" id="portfolio">
+      <!-- <div id="vinet_top"></div> -->
+      <div id="portfolio_h1">
+        <div id="portfolio_h1bg"></div>
+        <h1>Портфолио</h1>
+        <h2>Природа</h2>
+        <h2>Портреты</h2>
+        <h2>Город</h2>
+        <h2>Животные</h2>
       </div>
-      <div class="section" id="about">
-        <div class="intro" id="wrapper">
-          <div id="photo_of_team"></div>
-          <div id="text_about"> 
-            <h2 id="H1_text_about">О нас</h2>
-            <p>Нетривиальное видение формирует наш собственный стиль и позволяет создавать необычные разноплановые фотографии.</p><br/>
-            <p>Опыт и легкость в общении помогают нам добиваться искренних эмоций, делая репортаж живым, а 
-            постановку естественной.</p><br/>
-            <p>Если вы цените в фотографии душу, и хотите сделать их незабываемыми — пишите.</p> 
-          </div>
+      <div id="portfolio_images">
+        <div class="portfolio_images_list" id="portfolio_images_list_1">
+          <div class="portfolio_image_1" id="portfolio_image_1_1"></div>
+          <div class="portfolio_image_2" id="portfolio_image_1_2"></div>
+          <div class="portfolio_image_3" id="portfolio_image_1_3"></div>
+          <div class="portfolio_image_4" id="portfolio_image_1_4"></div>
+          <div class="portfolio_image_5" id="portfolio_image_1_5"></div>
+          <div class="portfolio_image_6" id="portfolio_image_1_6"></div>
         </div>
-        <div id="text_about_man1"> 
-          <p>Меня зовут Константин. Я — фотограф, видеограф.</p><br/>
-          <p>Я знаю, что для вас важно красиво и стильно выглядеть на фотографиях, поэтому если не знаете как встать - я вас поставлю!
-            У меня большой опыт общения с людьми - cъёмками свадеб и портретов занимаюсь уже 29 лет.</p><br/>
+        <div class="portfolio_images_list" id="portfolio_images_list_2">
+          <div class="portfolio_image_1" id="portfolio_image_2_1"></div>
+          <div class="portfolio_image_2" id="portfolio_image_2_2"></div>
+          <div class="portfolio_image_3" id="portfolio_image_2_3"></div>
+          <div class="portfolio_image_4" id="portfolio_image_2_4"></div>
+          <div class="portfolio_image_5" id="portfolio_image_2_5"></div>
+          <div class="portfolio_image_6" id="portfolio_image_2_6"></div>
         </div>
-        <div id="text_about_women1"> 
+        <div class="portfolio_images_list" id="portfolio_images_list_2">
+          <div class="portfolio_image_1" id="portfolio_image_3_1"></div>
+          <div class="portfolio_image_2" id="portfolio_image_3_2"></div>
+          <div class="portfolio_image_3" id="portfolio_image_3_3"></div>
+          <div class="portfolio_image_4" id="portfolio_image_3_4"></div>
+          <div class="portfolio_image_5" id="portfolio_image_3_5"></div>
+          <div class="portfolio_image_6" id="portfolio_image_3_6"></div>
+        </div>
+      </div>
+      <div id="vinet_bottom"></div>
+    </div>
+    <div class="section" id="about">
+      <div id="about_bg"></div>
+      <div class="intro" id="wrapper">
+        <div id="photo_of_team">
+          <div class="photo_of_team_on_about" id="photo_of_man1"> </div>
+          <div class="photo_of_team_on_about" id="photo_of_women1"> </div>
+          <div class="photo_of_team_on_about" id="photo_of_man2"> </div>
+          <div class="photo_of_team_on_about" id="photo_of_women2"> </div>
+          <div class="photo_of_team_on_about" id="photo_of_studio"> </div>
+        </div>
+        <div class="class_of_text_about_person" id="text_about">
+          <h2 id="H1_text_about">О нас</h2>
+          <p>Нетривиальное видение формирует наш собственный стиль и позволяет создавать необычные разноплановые
+            фотографии.</p><br />
+          <p>Опыт и легкость в общении помогают нам добиваться искренних эмоций, делая репортаж живым, а
+            постановку естественной.</p>
+        </div>
+        <div class="class_of_text_about_person" id="text_about_man1">
+          <h2 id="H1_text_about">Константин Степанов</h2>
+          <p>Меня зовут Константин. Я — фотограф, видеограф.</p><br />
+          <p>Я знаю, что для вас важно красиво и стильно выглядеть на фотографиях, поэтому если не знаете как встать - я
+            вас поставлю!
+            У меня большой опыт общения с людьми - cъёмками свадеб и портретов занимаюсь уже 9 лет.</p><br />
+        </div>
+        <div class="class_of_text_about_person" id="text_about_women1">
+          <h2 id="H1_text_about">Анна Степанова</h2>
           <p>В детстве у меня была большая мечта, Я хотела стать
             известным модельером. Время шло. Я взрослела.
             Интересы менялись. Но мечта жила, правда менее
             ярко. И только спустя десятилетия, опробовав себя
             на разных поприщах, я опять пришла к своей мечте.
             Правда, создаю я не платья, а прически.
-          </p><br/>
-          <p>Работаю над формой и цветом волос.</p><br/>
+          </p><br />
+          <p>Работаю над формой и цветом волос.</p><br />
         </div>
-        <div id="text_about_man2"> 
+        <div class="class_of_text_about_person" id="text_about_man2">
+          <h2 id="H1_text_about">Сергей Степанов</h2>
           <p>Я занимаюсь фотографией больше 5 лет, а последние
             два года специализируюсь на составлении лент
             для Instagram для блогеров, брендов, экспертов
-            и всех желающих. </p><br/>
+            и всех желающих. </p><br />
           <p>Давно хочешь начать вести
             красивый инстаграм, но никак не доходят руки?
-            Доверь это мне! </p> 
+            Доверь это мне! </p>
         </div>
-        <div id="text_about_women2"> 
-          <p>Меня зовут Анастасия, и вот уже 9 летя работаю фотографом
-            в Москве. Мои фотографии публикуют в журналах.</p><br/>
+        <div class="class_of_text_about_person" id="text_about_women2">
+          <h2 id="H1_text_about">Анастасия Степанова</h2>
+          <p>Меня зовут Анастасия, и вот уже 9 лет я работаю фотографом
+            в Москве. Мои фотографии публикуют в журналах.</p><br />
           <p>На фотосессии покажу как вам встать и куда посмотреть,
-            чтобы вы нравились себе на фотографиях.</p><br/>
+            чтобы вы нравились себе на фотографиях.</p><br />
         </div>
       </div>
-      <div class="section" id="order">
-        <div class="intro">
-          <h1>Just terrific!</h1>
-          <p>Use the power of images</p>
-        </div>
-      </div>
-      <div class="section" id="comments">
-        <div class="intro">
-          <h1>Just terrific!</h1>
-          <p>Use the power of images</p>
+      <div id="vinet_bottom"></div>
+    </div>
+    <div class="section" id="order">
+      <h1>ЗАКАЗ РАБОТ</h1>
+      <div class="gallery-wrapper">
+        <div class="content">
+          <div class="gallery full">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="image"><img src="img/exphoto/portrait/117.png" /></div>
+                  <div class="overlay">
+                    <div class="text-wrap">
+                      <div class="name">
+                        <span>Портреты</span>
+                      </div>
+                      <br />
+                      Портрет – наиболее популярный, но и очень сложный жанр в фотографии. Портретная съемка – не просто
+                      позирование и нажимание кнопки спуска, портрет требует осмысленного подхода, подготовки и усердия.
+                      <br /><br />
+                      <div id="icons_of_order">
+                        <span class="material-icons" id="icons_of_order">person</span>
+                        Константин Степанов
+                        <span class="material-icons" id="icons_of_order">history_toggle_off</span>
+                        2-3 часа
+                        <span class="material-icons" id="icons_of_order">currency_ruble</span>
+                        2000-5000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image"><img src="img/exphoto/studio/88.png" /></div>
+                  <div class="overlay">
+                    <div class="text-wrap">
+                      <div class="name">
+                        <span>Студийная съемка</span>
+                      </div>
+                      <br />
+                      Проведение профессиональной съемки в студии является залогом получения высококачественных работ.
+                      Полученные фото позволят реализовать бизнес-идеи или могут быть заказаны для личного
+                      использования.
+                      <br /><br />
+                      <div id="icons_of_order">
+                        <span class="material-icons" id="icons_of_order">person</span>
+                        Константин Степанов
+                        <span class="material-icons" id="icons_of_order">history_toggle_off</span>
+                        Около дня
+                        <span class="material-icons" id="icons_of_order">currency_ruble</span>
+                        От 5000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image"><img src="img/exphoto/video/city.gif" /></div>
+                  <div class="overlay">
+                    <div class="text-wrap">
+                      <div class="name">
+                        <span>Видеосъемка</span>
+                      </div>
+                      <br />
+                      Видеограф — это специалист, который занимается полным циклом видеопроизводства — от съемки до
+                      презентации смонтированного видео заказчику. Он проводит видеосъемку частных и корпоративных
+                      мероприятий, создает видеоролики для блогов.
+                      <br /><br />
+                      <div id="icons_of_order">
+                        <span class="material-icons" id="icons_of_order">person</span>
+                        Сергей Степанов
+                        <span class="material-icons" id="icons_of_order">history_toggle_off</span>
+                        От типа работы
+                        <span class="material-icons" id="icons_of_order">currency_ruble</span>
+                        от 4000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image"><img src="img/exphoto/marry/69.png" /></div>
+                  <div class="overlay">
+                    <div class="text-wrap">
+                      <div class="name">
+                        <span>Свадебный фотограф</span>
+                      </div>
+                      <br />
+                      Люди всегда стремятся оставить себе память о важных для них событиях. А фотографии свадебных
+                      церемоний, скорее всего, были одними из первых, которые всем хотелось сохранить на память с тех
+                      времен, когда появились фотоаппараты, так как мало событий в жизни человека, которые по важности
+                      могут соперничать с бракосочетанием.
+                      <br /><br />
+                      <div id="icons_of_order">
+                        <span class="material-icons" id="icons_of_order">person</span>
+                        Константин Степанов
+                        <span class="material-icons" id="icons_of_order">history_toggle_off</span>
+                        Один день
+                        <span class="material-icons" id="icons_of_order">currency_ruble</span>
+                        от 40000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image"><img src="img/exphoto/art/129.png" /></div>
+                  <div class="overlay">
+                    <div class="text-wrap">
+                      <div class="name">
+                        <span>Арт-фотограф</span>
+                      </div>
+                      <br />
+                      Проведение профессиональной съемки в студии является залогом получения высококачественных работ.
+                      Полученные фото позволят реализовать бизнес-идеи или могут быть заказаны для личного использования
+                      <br /><br />
+                      <div id="icons_of_order">
+                        <span class="material-icons" id="icons_of_order">person</span>
+                        Сергей Степанов
+                        <span class="material-icons" id="icons_of_order">history_toggle_off</span>
+                        От типа работы
+                        <span class="material-icons" id="icons_of_order">currency_ruble</span>
+                        От 5000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image"><img src="img/exphoto/report/44.png" /></div>
+                  <div class="overlay">
+                    <div class="text-wrap">
+                      <div class="name">
+                        <span>Репортажная фотосъемка</span>
+                      </div>
+                      <br />
+                      Репортажная фотосъёмка – это особый вид фотографии, объединяющий в себе пейзажную, портретную,
+                      бытовую и другие жанры фотосъёмки. Главная задача репортажной съёмки заключается в том, чтобы
+                      передать атмосферу события
+                      <br /><br />
+                      <div id="icons_of_order">
+                        <span class="material-icons" id="icons_of_order">person</span>
+                        Анастасия Степанова
+                        <span class="material-icons" id="icons_of_order">history_toggle_off</span>
+                        2-10 часов
+                        <span class="material-icons" id="icons_of_order">currency_ruble</span>
+                        5000 в час
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image"><img src="img/exphoto/fashion/24.png" /></div>
+                  <div class="overlay">
+                    <div class="text-wrap">
+                      <div class="name">
+                        <span>Fashion фотограф</span>
+                      </div>
+                      <br />
+                      Fashion-фотография - это жанр фотоискусства, демонстрирующий одежду, аксессуары, прически и другие
+                      аспекты модной индустрии. Главные площадки для размещения Fashion-фотографий.
+                      <br /><br />
+                      <div id="icons_of_order">
+                        <span class="material-icons" id="icons_of_order">person</span>
+                        Анастасия Степанова
+                        <span class="material-icons" id="icons_of_order">history_toggle_off</span>
+                        4-5 часов
+                        <span class="material-icons" id="icons_of_order">currency_ruble</span>
+                        5000-10000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="image"><img src="img/exphoto/arch/3.png" /></div>
+                  <div class="overlay">
+                    <div class="text-wrap">
+                      <div class="name">
+                        <span>Архитектурный фотограф</span>
+                      </div>
+                      <br />
+                      Архитектура — это вехи, которые история расставляет на пути своего развития. Здания и сооружения,
+                      давно ставшие фоном нашей повседневной жизни, являются самыми доступными сюжетами фотосъемки.
+                      <br /><br />
+                      <div id="icons_of_order">
+                        <span class="material-icons" id="icons_of_order">person</span>
+                        Анастасия Степанова
+                        <span class="material-icons" id="icons_of_order">history_toggle_off</span>
+                        от 1 дня
+                        <span class="material-icons" id="icons_of_order">currency_ruble</span>
+                        от 20000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-next-button">
+              <em class="material-icons">chevron_right</em>
+            </div>
+            <div class="swiper-prev-button">
+              <em class="material-icons">chevron_left</em>
+            </div>
+          </div>
+          <div class="gallery thumb">
+            <div class="swiper-container">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+    <div id="vinet_bottom"></div>
+  </div>
+  <div class="section" id="comments">
+    <div id="up_of_comments" onClick="document.location.href = '#order'">
+      <span class="material-icons">
+        north
+      </span>
+    </div>
+    <div id="scroll_comments">
+
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>

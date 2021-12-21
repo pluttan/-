@@ -11,7 +11,6 @@ $(document).on("click", ".hamburger", function () {
 $(document).on("click", ".cross", function () {
   if (entreg){
     $('#black_bg').hide();
-    console.log("enter");
     $('.enter_container').hide();
     $('.register_container').hide();
     $(".twobar").removeClass("cross").addClass("hamburger");
