@@ -1,7 +1,6 @@
 
 $(document).on("click", "#hat_register", function () {
     $('#black_bg').show();
-    console.log("register");
     $('.register_container').show();
     $('.enter_container').hide();
     $("#hat_head").css({

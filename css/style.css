@@ -1,6 +1,10 @@
 html {
   height: 100%;
   user-select:none;
+  background-color: #000000;
+  color:aliceblue !important;
+  font-family: Comfortaa !important;
+  text-shadow: 3px 3px 6px black, 0 0 1em black;
 }
 
 body {
@@ -67,17 +71,18 @@ body {
   top: 87.5vh;
   height: 25vh;
   margin-bottom: 12.5vh;
-  z-index: 100000000;
-  width: 100vw;
+  z-index: 10;
+  width: 100%;
   background: linear-gradient(180deg, #00000000,#000000, #00000000);
 }
 
 #vinet_top{
   position: absolute;
+  top:0;
+  z-index: 10;
   height: 25vh;
   margin-top: -12.5vh;
-  z-index: 100000000;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(180deg, #00000000,#000000, #00000000);
 }
 
