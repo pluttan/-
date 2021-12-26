@@ -21,23 +21,14 @@ $(document).ready(function () {
     photo = 6;
     for (list = 1; list < lists + 1; list++) {
         for (p = 1; p < photo + 2; p++) {
-<<<<<<< HEAD
-            $("#portfolio_image_" + list + "_" + p).css({ "background-image": "url(img/nature/nature_" + String(getRandomInt(31)) + ".jpg)", });
-=======
             $("#portfolio_image_" + list + "_" + p).css(getimage());
->>>>>>> dc2397d28853fbc8b9cdd60da032702034f6f08b
         }
     }
     i = 0;
     portfolio_animation = function () {
         $("#portfolio_images").css({ "margin-left": -40 - i });
         i++;
-<<<<<<< HEAD
-        console.log(i);
-        if (i % 2000 == 0) {
-=======
         if (i % 1500 == 0) {
->>>>>>> dc2397d28853fbc8b9cdd60da032702034f6f08b
             lists++;
             portappend = '<div class="portfolio_images_list" id="portfolio_images_list_' + lists + '">'
             for (p = 1; p < photo + 1; p++) {
@@ -46,11 +37,7 @@ $(document).ready(function () {
             $("#portfolio_images").append(portappend + '</div>');
             function get_bg() {
                 for (p = 1; p < photo + 1; p++) {
-<<<<<<< HEAD
-                    $("#portfolio_image_" + lists + "_" + p).css({ "background-image": "url(img/nature/nature_" + String(getRandomInt(31)) + ".jpg)" });
-=======
                     $("#portfolio_image_" + lists + "_" + p).css(getimage());
->>>>>>> dc2397d28853fbc8b9cdd60da032702034f6f08b
                 };
             };
             setTimeout(() => get_bg(), 100)
