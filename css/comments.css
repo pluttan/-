@@ -21,7 +21,10 @@
 }
 #scroll_comments {
   color: black;
+<<<<<<< HEAD
   background-image: url(../img/bg2.jpg);
+=======
+>>>>>>> dc2397d28853fbc8b9cdd60da032702034f6f08b
   padding: 6% 0 0 0;
   height: 100vh;
   overflow: hidden;

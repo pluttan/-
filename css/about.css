@@ -32,6 +32,10 @@ p {
 
 .photo_of_team_on_about {
   height: 10vw;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> dc2397d28853fbc8b9cdd60da032702034f6f08b
   width: 10vw;
   background-size: contain;
   position: relative;
