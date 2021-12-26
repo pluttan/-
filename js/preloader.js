@@ -39,7 +39,7 @@ includeHTML();
 $(window).on("load", function () {
 
   $("#main").css({ "z-index": "-1" });
-  $("#mainbg").css({ "background-image": "url(img/imgsformainbg/" + String(getRandomInt(31)) + ".webp)", });
+  $("#mainbg").css({ "background-image": "url(../img/imgsformainbg/" + String(getRandomInt(31)) + ".webp)", });
   $("#imgM").hide(10);
   entreg = false;
   $("#hat").show(10);

@@ -6,12 +6,12 @@ function getRandomInt(max) {
 
 function getimage() {
     a = getRandomInt(4)
-    if (a == 1) { return { "background-image": "url(img/img_portfolio/nature_" + String(getRandomInt(100)) + ".jpg)" } }
+    if (a == 1) { return { "background-image": "url(../img/img_portfolio/nature_" + String(getRandomInt(100)) + ".jpg)" } }
     else {
-        if (a == 2) { return { "background-image": "url(img/img_portfolio/city_" + String(getRandomInt(100)) + ".jpg)" } }
+        if (a == 2) { return { "background-image": "url(../img/img_portfolio/city_" + String(getRandomInt(100)) + ".jpg)" } }
         else {
-            if (a == 3) { return { "background-image": "url(img/img_portfolio/people_" + String(getRandomInt(100)) + ".jpg)" } }
-            else { if (a == 4) { return { "background-image": "url(img/img_portfolio/nature_" + String(getRandomInt(100)) + ".jpg)" } } }
+            if (a == 3) { return { "background-image": "url(../img/img_portfolio/people_" + String(getRandomInt(100)) + ".jpg)" } }
+            else { if (a == 4) { return { "background-image": "url(../img/img_portfolio/nature_" + String(getRandomInt(100)) + ".jpg)" } } }
         }
     }
 }
