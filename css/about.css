@@ -36,7 +36,7 @@ p {
   width: 10vw;
   background-size: contain;
   position: relative;
-  border-radius: 50%;
+  border-radius: 50vh;
   z-index: 10;
   border: 2px dotted #ffffff00;
   box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0);

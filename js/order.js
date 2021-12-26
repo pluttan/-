@@ -1,5 +1,5 @@
-$(function(){
-    if($('.gallery-wrapper').length){
+$(function () {
+    if ($('.gallery-wrapper').length) {
         var galleryThumbs = new Swiper('.gallery-wrapper .content .gallery.thumb .swiper-container', {
             speed: 900,
             effect: 'slide',
@@ -31,26 +31,26 @@ $(function(){
                     spaceBetween: 10
                 }
             },
-			  on: {
-				  init: function() { 
-				  	let containerThumbWidth = $('.gallery-wrapper .content .gallery.thumb').outerWidth();
-	
-	let totalThumbWidth = 0;
-	
-	$('.gallery.thumb .swiper-container .swiper-wrapper .swiper-slide').each(function(){
-		let thumbWidth = $(this).outerWidth();
-		totalThumbWidth += thumbWidth
-	});
-	
-	
-	
-	if(totalThumbWidth < containerThumbWidth){
-		$('.gallery.thumb .swiper-next-button, .gallery.thumb .swiper-prev-button').addClass('hide');
-	}else{
-		$('.gallery.thumb .swiper-next-button, .gallery.thumb .swiper-prev-button').removeClass('hide');
-	}
-			   }
-			  }
+            on: {
+                init: function () {
+                    let containerThumbWidth = $('.gallery-wrapper .content .gallery.thumb').outerWidth();
+
+                    let totalThumbWidth = 0;
+
+                    $('.gallery.thumb .swiper-container .swiper-wrapper .swiper-slide').each(function () {
+                        let thumbWidth = $(this).outerWidth();
+                        totalThumbWidth += thumbWidth
+                    });
+
+
+
+                    if (totalThumbWidth < containerThumbWidth) {
+                        $('.gallery.thumb .swiper-next-button, .gallery.thumb .swiper-prev-button').addClass('hide');
+                    } else {
+                        $('.gallery.thumb .swiper-next-button, .gallery.thumb .swiper-prev-button').removeClass('hide');
+                    }
+                }
+            }
         });
 
         var galleryFull = new Swiper('.gallery-wrapper .content .gallery.full .swiper-container', {
@@ -90,8 +90,8 @@ $(function(){
 });
 
 
-$(window).on("load", function() {
-    setTimeout(function(){
-        $('.loader').fadeOut();
-    }, 100);
+
+$('.loader').fadeOut();
+$(window).on("load", function () {
+    $('.swiper-next-button').click();
 });
