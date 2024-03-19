@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- libs -->
+	<link rel="stylesheet" type="text/css" href="../css/pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="../css/animate.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/pages.js"></script>
+	<script type="text/javascript" src="../js/lettering.js"></script>
+	<script type="text/javascript" src="../js/textillate.js"></script>
+	<script type="text/javascript" src="../js/fittext.js"></script>
+
+	<!-- script&style -->
+
+	<script type="text/javascript">
+		var deleteLog = false;
+		var verticalCentered = false;
+
+		$(window).on('load', function () {
+			$('.preloader').css({'display' : 'none'});
+			$('.section').css({'display' : 'flex'});
+		});
+
+		$(document).ready(function() {
+			let i = 0;
+			function blurmain(){
+				$('#mainbg')
+					.css(
+						{'filter' : 'blur('+String(i/10)+'px)'}
+						);
+				i++;
+			};			
+			function interval_of_blur(){
+					mainbginterval = setInterval(blurmain,10);
+				};
+			setTimeout(() => interval_of_blur(),1000);
+			setTimeout(() => clearInterval(mainbginterval),2000);
+			
+			function mainh1_animation(){
+				$('#mainh1').css({'display' : 'flex'});
+				$('#mainh1').textillate({ in: { effect: 'flipInY' }});
+			}
+			function mainh2_animation(){
+				$('#mainh2').css({'display' : 'flex'});
+				$('#mainh2').textillate({ in: { effect: 'flipInY' }});
+			}
+			setTimeout(() => mainh1_animation(),2000);
+			setTimeout(() => mainh2_animation(),3000);
+			
+
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['main', 'portfolio', 'page3'],
+	    		navigation: {
+		            'textColor': '#f2f2f2',
+		            'bulletsColor': '#ccc',
+		            'position': 'right',
+		            'tooltips': ['main', 'portfolio', 'Page 3', 'Page 4']
+		        },
+				afterLoad: function(authorLink, index){
+					if (index==1){
+						let i = 10;
+						function blurmain(){
+							$('#mainbg')
+								.css(
+									{'filter' : 'blur('+String(i/10)+'px)'}
+									);
+							i++;
+						};			
+						function interval_of_blur(){
+								mainbginterval = setInterval(blurmain,10);
+							};						
+						interval_of_blur();
+						setTimeout(() => clearInterval(mainbginterval),1500);
+						
+						function mainh1start(){
+							$("#mainh1").textillate('start');
+							setTimeout($('#mainh1').css({'display' : 'flex'}),1000);
+							};
+						
+						function mainh2start(){
+							$("#mainh2").textillate('start');
+							setTimeout($('#mainh2').css({'display' : 'flex'}),1000);
+						};
+						$('#mainh2').on('inAnimationEnd.tlt', function () {
+						setTimeout(() => mainh1start(),2000);
+						setTimeout(() => mainh2start(),3000);});
+					};
+					if(index==2){
+						function removemainanimation(){
+							$('#mainh1').css({'display' : 'none'});
+							$('#mainh2').css({'display' : 'none'});
+							$('#mainh2').on('inAnimationBegin.tlt', function () {
+								$('#mainh1').css({'display' : 'flex'});
+								$('#mainh2').css({'display' : 'flex'});
+							});
+							$('#mainbg').css({'filter' : 'blur(0px)'});
+						};
+						setTimeout(() => removemainanimation(),400);
+					};
+
+				},
+			});
+	    });
+			
+    </script>
+
+    <style>
+		html{height:100%;};
+		body{height:100%;};
+
+		
+		.preloader {
+			
+		}
+		.preloader-remove {
+			opacity: 0;
+			z-index: -10;
+		}
+
+		.preloader svg {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 25em;
+			border-radius: 3px;
+			background: #242424;
+			fill: none;
+			stroke: #353535;
+			stroke-linecap: round;
+			stroke-width: 12%
+		}
+		.preloader use {
+			stroke: #696969;
+			animation: preloader 2s linear infinite
+		}
+		@keyframes preloader {
+			to { 
+				stroke-dashoffset: 0px 
+			} 
+		}
+
+		.section{
+			text-align:center;
+			background-size: cover;
+			display:none;
+		}
+
+		#main{
+			height:100%;
+			display:flex;
+			background-color: #000;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			color: #fff;
+		}
+
+		#mainbg{
+			background-image: url(imgs/1.webp);
+			width:100%;
+			z-index: -1;
+			height:100%;
+			position: absolute; right: 0; bottom: 0;
+		}
+
+		
+
+		#portfolio{
+			background-image: url(imgs/bg2.jpg);
+			padding: 6% 0 0 0;
+			height:110%;
+		}
+		#section3{
+			background-image: url(imgs/bg3.jpg);
+			padding: 6% 0 0 0;
+		}
+
+		#mainh1{color:aliceblue;font-size:70px;display: none;}
+		#mainh2{color:aliceblue;font-size:50px;display: none;}
+    </style>
+
+</head>
+<body>
+
+	<!--preloader-->
+
+	<div class="preloader" style="
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		z-index:10000;
+		justify-content: center;
+		background-color:#242424;">
+			<svg viewBox="-2000 -1000 4000 2000">
+				<path id="inf" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
+				<use xlink:href="#inf" stroke-dasharray="1570 5143" stroke-dashoffset="6713px"></use>
+			</svg>
+	</div>
+
+	<div id="pagepiling">
+	    <div class="section" id="main">
+			<div id="mainbg"></div>
+	    	<div>
+				<h1 id="mainh1" data-in-effect="rollIn">Think different</h1>
+				<h2 id="mainh2">Put photo better</h2>
+			</div>
+	    </div>
+	    <div class="section" id="portfolio">
+	    	<div class="intro">
+	    		<h1>Backgrounds </h1>
+	    		<p>Show it in full screen!</p>
+	    	</div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+	    		<h1>Just terrific!</h1>
+	    		<p>Use the power of images</p>
+	    	</div>
+	    </div>
+	</div>
+</body>
+</html>
